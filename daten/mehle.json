@@ -1,0 +1,186 @@
+{
+    "schema_version": 1,
+    "updated_at": "2026-02-12T17:50:42+01:00",
+    "items": [
+        {
+            "id": "mehl_weizen_405",
+            "mehlArt": "Weizen",
+            "mehlTyp": "405",
+            "eigenName": "Weissmehl / Auszugsmehl",
+            "empfohleneHydration": "60-65%",
+            "vorhanden": true,
+            "vorhandenGramm": 150
+        },
+        {
+            "id": "mehl_weizen_550",
+            "mehlArt": "Weizen",
+            "mehlTyp": "550",
+            "eigenName": "Standard-Backmehl Typ 550",
+            "empfohleneHydration": "60-65%",
+            "vorhanden": false,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_weizen_812",
+            "mehlArt": "Weizen",
+            "mehlTyp": "812",
+            "eigenName": "Halbweissmehl",
+            "empfohleneHydration": "68-75%",
+            "vorhanden": false,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_ruch_1050",
+            "mehlArt": "Weizen",
+            "mehlTyp": "1050",
+            "eigenName": "Ruchmehl",
+            "empfohleneHydration": "68-75%",
+            "vorhanden": false,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_dinkel_1600",
+            "mehlArt": "Dinkel",
+            "mehlTyp": "1600",
+            "eigenName": "Dikel",
+            "empfohleneHydration": "75-90%",
+            "vorhanden": false,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_dinkel_1050_weiss",
+            "mehlArt": "Dinkel",
+            "mehlTyp": "1050",
+            "eigenName": "Weissmehl",
+            "empfohleneHydration": "65-75%",
+            "vorhanden": false,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_dinkel_1050_ruch",
+            "mehlArt": "Dinkel",
+            "mehlTyp": "1050",
+            "eigenName": "Ruchmehl",
+            "empfohleneHydration": "65-75%",
+            "vorhanden": true,
+            "vorhandenGramm": 100
+        },
+        {
+            "id": "mehl_weizen_vollkorn",
+            "mehlArt": "Weizen",
+            "mehlTyp": "Vollkorn",
+            "eigenName": "Vollkornmehl",
+            "empfohleneHydration": "65-75%",
+            "vorhanden": true,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_roggen_815",
+            "mehlArt": "Roggen",
+            "mehlTyp": "815",
+            "eigenName": "hell",
+            "empfohleneHydration": "75-85%",
+            "vorhanden": true,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_roggen_1150",
+            "mehlArt": "Roggen",
+            "mehlTyp": "1150",
+            "eigenName": "dunkel",
+            "empfohleneHydration": "78-92%",
+            "vorhanden": true,
+            "vorhandenGramm": 150
+        },
+        {
+            "id": "mehl_roggen_vollkorn",
+            "mehlArt": "Roggen",
+            "mehlTyp": "Vollkorn",
+            "eigenName": "Vollkornmehl",
+            "empfohleneHydration": "80-95%",
+            "vorhanden": false,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_emmer_vollkorn",
+            "mehlArt": "Urgetreide",
+            "mehlTyp": "Emmer",
+            "eigenName": "Vollkornmehl",
+            "empfohleneHydration": "55-65%",
+            "vorhanden": true,
+            "vorhandenGramm": 500
+        },
+        {
+            "id": "mehl_einkorn_vollkorn",
+            "mehlArt": "Urgetreide",
+            "mehlTyp": "Einkorn",
+            "eigenName": "Einkornmehl",
+            "empfohleneHydration": "55-65%",
+            "vorhanden": false,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_weizen_00",
+            "mehlArt": "Weizen",
+            "mehlTyp": "00",
+            "eigenName": "Pizzamehl",
+            "empfohleneHydration": "60-65%",
+            "vorhanden": true,
+            "vorhandenGramm": 500
+        },
+        {
+            "id": "mehl_dinkel_1050_edeka_bio",
+            "mehlArt": "Dinkel",
+            "mehlTyp": "1050",
+            "eigenName": "Edeka Bio",
+            "empfohleneHydration": "70",
+            "vorhanden": true,
+            "vorhandenGramm": 500
+        },
+        {
+            "id": "mehl_buchweizen",
+            "mehlArt": "Pseudogetreide",
+            "mehlTyp": "Buchweizen",
+            "eigenName": "",
+            "empfohleneHydration": "70-85%",
+            "vorhanden": false,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_dinkel_630",
+            "mehlArt": "Dinkel",
+            "mehlTyp": "630",
+            "eigenName": "",
+            "empfohleneHydration": "65-75%",
+            "vorhanden": false,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_dinkel_vollkorn",
+            "mehlArt": "Dinkel",
+            "mehlTyp": "Vollkorn",
+            "eigenName": "",
+            "empfohleneHydration": "70-85%",
+            "vorhanden": false,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_roggen_schrot",
+            "mehlArt": "Roggen",
+            "mehlTyp": "Schrot",
+            "eigenName": "grob",
+            "empfohleneHydration": "85-100%",
+            "vorhanden": false,
+            "vorhandenGramm": 0
+        },
+        {
+            "id": "mehl_urdinkel_vollkorn",
+            "mehlArt": "Urgetreide",
+            "mehlTyp": "Urdinkel Vollkorn",
+            "eigenName": "",
+            "empfohleneHydration": "75-90%",
+            "vorhanden": false,
+            "vorhandenGramm": 0
+        }
+    ]
+}

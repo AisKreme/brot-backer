@@ -1,0 +1,797 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-02-12T12:00:00+01:00",
+  "items": [
+    {
+      "id": "brot_sauerteig_1x1",
+      "name": "Sauerteig Brot 1x1",
+      "description": "Ein aromatisches Einsteigerbrot mit langer Übernachtgare für maximale Bekömmlichkeit.",
+      "status": "active",
+      "version": 1,
+      "tags": ["sauerteig", "weizen", "übernachtgare"],
+      "yield": { "loaf_count_default": 2, "target_dough_weight_g": 1800 },
+      "formula": {
+        "flours": [
+          { "mehl_id": "mehl_weizen_550", "percent": 85.0, "amount_g": 850 },
+          {
+            "mehl_id": "mehl_weizen_vollkorn",
+            "percent": 15.0,
+            "amount_g": 150
+          }
+        ],
+        "water_g": 700,
+        "salt_g": 21,
+        "starter": { "amount_g": 200, "hydration_percent": 100.0 },
+        "additional_ingredients": []
+      },
+      "targets": { "hydration_percent": 70.0, "dough_temp_c": 24.0 },
+      "process_template": [
+        {
+          "key": "autolyse",
+          "label": "Autolyse",
+          "duration_min": 30,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "stockgare",
+          "label": "Stockgare",
+          "duration_min": 120,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "stueckgare",
+          "label": "Stueckgare",
+          "duration_min": 720,
+          "target_temp_c": 5.0
+        },
+        {
+          "key": "backen",
+          "label": "Backen",
+          "duration_min": 50,
+          "target_temp_c": 230.0
+        }
+      ],
+      "bake_profile": [
+        {
+          "phase": "anbacken",
+          "duration_min": 20,
+          "temp_c": 250.0,
+          "steam": true
+        },
+        {
+          "phase": "ausbacken",
+          "duration_min": 30,
+          "temp_c": 220.0,
+          "steam": false
+        }
+      ],
+      "notes": "Teiglinge straff aufrollen; Einschneiden im 45-Grad-Winkel [12, 13]."
+    },
+    {
+      "id": "brot_buchweizen_sauerteig",
+      "name": "Buchweizen Sauerteigbrot",
+      "description": "Rustikales Brot mit nussigem Aroma durch hohen Buchweizenanteil und Brühstück.",
+      "status": "active",
+      "version": 1,
+      "tags": ["sauerteig", "buchweizen", "brühstück"],
+      "yield": { "loaf_count_default": 1, "target_dough_weight_g": 1360 },
+      "formula": {
+        "flours": [
+          { "mehl_id": "mehl_weizen_812", "percent": 75.0, "amount_g": 525 },
+          { "mehl_id": "mehl_buchweizen", "percent": 25.0, "amount_g": 175 }
+        ],
+        "water_g": 610,
+        "salt_g": 14,
+        "starter": { "amount_g": 130, "hydration_percent": 73.0 },
+        "additional_ingredients": [{ "name": "Rapsöl", "amount_g": 20 }]
+      },
+      "targets": { "hydration_percent": 87.0, "dough_temp_c": 28.0 },
+      "process_template": [
+        {
+          "key": "bruehstueck",
+          "label": "Brühstück",
+          "duration_min": 180,
+          "target_temp_c": 5.0
+        },
+        {
+          "key": "stockgare",
+          "label": "Stockgare",
+          "duration_min": 240,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "stueckgare",
+          "label": "Stueckgare",
+          "duration_min": 840,
+          "target_temp_c": 5.0
+        },
+        {
+          "key": "backen",
+          "label": "Backen",
+          "duration_min": 55,
+          "target_temp_c": 210.0
+        }
+      ],
+      "bake_profile": [
+        {
+          "phase": "anbacken",
+          "duration_min": 20,
+          "temp_c": 250.0,
+          "steam": true
+        },
+        {
+          "phase": "ausbacken",
+          "duration_min": 35,
+          "temp_c": 210.0,
+          "steam": false
+        }
+      ],
+      "notes": "Teig ist sehr klebrig; Wasser bei Bedarf um 10-20% reduzieren [2, 14]."
+    },
+    {
+      "id": "brot_marcels_ruchmehl",
+      "name": "Marcels Sauerteigbrot (Ruchmehl)",
+      "description": "Das Referenzmodell für ein aromatisches Weizenmischbrot auf Ruchmehl-Basis.",
+      "status": "active",
+      "version": 1,
+      "tags": ["sauerteig", "ruchmehl", "bassinage"],
+      "yield": { "loaf_count_default": 1, "target_dough_weight_g": 1330 },
+      "formula": {
+        "flours": [
+          { "mehl_id": "mehl_ruch_1050", "percent": 83.0, "amount_g": 580 },
+          { "mehl_id": "mehl_roggen_1150", "percent": 8.5, "amount_g": 60 },
+          { "mehl_id": "mehl_weizen_vollkorn", "percent": 8.5, "amount_g": 60 }
+        ],
+        "water_g": 600,
+        "salt_g": 18,
+        "starter": { "amount_g": 140, "hydration_percent": 116.0 },
+        "additional_ingredients": []
+      },
+      "targets": { "hydration_percent": 85.0, "dough_temp_c": 26.0 },
+      "process_template": [
+        {
+          "key": "vorteig",
+          "label": "Sauerteig-Vorteig",
+          "duration_min": 720,
+          "target_temp_c": 22.0
+        },
+        {
+          "key": "stockgare",
+          "label": "Stockgare",
+          "duration_min": 180,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "stueckgare",
+          "label": "Stueckgare",
+          "duration_min": 1080,
+          "target_temp_c": 5.0
+        },
+        {
+          "key": "backen",
+          "label": "Backen",
+          "duration_min": 60,
+          "target_temp_c": 210.0
+        }
+      ],
+      "bake_profile": [
+        {
+          "phase": "anbacken",
+          "duration_min": 20,
+          "temp_c": 260.0,
+          "steam": true
+        },
+        {
+          "phase": "ausbacken",
+          "duration_min": 35,
+          "temp_c": 210.0,
+          "steam": false
+        }
+      ],
+      "notes": "Intensive Knetphase mit Bassinage (Zusatzwasser am Ende) [15, 16]."
+    },
+    {
+      "id": "brot_dinkel_roggen_kalt",
+      "name": "Dinkel-Roggen-Sauerteigbrot",
+      "description": "Mild-säuerliches Brot aus der Kastenform mit optimierter kalter Stückgare.",
+      "status": "active",
+      "version": 1,
+      "tags": ["sauerteig", "dinkel", "roggen", "kastenform"],
+      "yield": { "loaf_count_default": 1, "target_dough_weight_g": 1050 },
+      "formula": {
+        "flours": [
+          { "mehl_id": "mehl_dinkel_630", "percent": 50.0, "amount_g": 250 },
+          {
+            "mehl_id": "mehl_dinkel_vollkorn",
+            "percent": 30.0,
+            "amount_g": 150
+          },
+          { "mehl_id": "mehl_roggen_1150", "percent": 20.0, "amount_g": 100 }
+        ],
+        "water_g": 340,
+        "salt_g": 11,
+        "starter": { "amount_g": 100, "hydration_percent": 60.0 },
+        "additional_ingredients": [
+          { "name": "Leinsamen geschrotet", "amount_g": 20 },
+          { "name": "Sesam", "amount_g": 20 },
+          { "name": "Olivenöl", "amount_g": 10 },
+          { "name": "Honig", "amount_g": 5 }
+        ]
+      },
+      "targets": { "hydration_percent": 68.0, "dough_temp_c": 24.0 },
+      "process_template": [
+        {
+          "key": "autolyse",
+          "label": "Autolyse",
+          "duration_min": 45,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "stockgare",
+          "label": "Stockgare",
+          "duration_min": 90,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "stueckgare",
+          "label": "Kalte Stückgare",
+          "duration_min": 840,
+          "target_temp_c": 5.0
+        },
+        {
+          "key": "backen",
+          "label": "Backen",
+          "duration_min": 65,
+          "target_temp_c": 200.0
+        }
+      ],
+      "bake_profile": [
+        {
+          "phase": "anbacken",
+          "duration_min": 15,
+          "temp_c": 230.0,
+          "steam": true
+        },
+        {
+          "phase": "ausbacken",
+          "duration_min": 50,
+          "temp_c": 200.0,
+          "steam": false
+        }
+      ],
+      "notes": "Nach 50 Min. aus der Form lösen und 10-15 Min. auf dem Rost nachbacken [17]."
+    },
+    {
+      "id": "brot_emmer_vollkorn",
+      "name": "Emmer Vollkornbrot",
+      "description": "Urgetreide-Brot mit komplexer Führung durch Poolish, Sauerteig und Kochstück.",
+      "status": "active",
+      "version": 1,
+      "tags": ["sauerteig", "emmer", "vollkorn", "poolish"],
+      "yield": { "loaf_count_default": 1, "target_dough_weight_g": 900 },
+      "formula": {
+        "flours": [
+          {
+            "mehl_id": "mehl_emmer_vollkorn",
+            "percent": 100.0,
+            "amount_g": 500
+          }
+        ],
+        "water_g": 380,
+        "salt_g": 10,
+        "starter": { "amount_g": 180, "hydration_percent": 70.0 },
+        "additional_ingredients": [
+          { "name": "Honig", "amount_g": 10 },
+          { "name": "Frischhefe (Poolish)", "amount_g": 1 }
+        ]
+      },
+      "targets": { "hydration_percent": 76.0, "dough_temp_c": 24.0 },
+      "process_template": [
+        {
+          "key": "vorteige",
+          "label": "Vorteige (Vorabend)",
+          "duration_min": 840,
+          "target_temp_c": 22.0
+        },
+        {
+          "key": "stockgare",
+          "label": "Stockgare",
+          "duration_min": 60,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "stueckgare",
+          "label": "Stückgare",
+          "duration_min": 60,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "backen",
+          "label": "Backen",
+          "duration_min": 35,
+          "target_temp_c": 210.0
+        }
+      ],
+      "bake_profile": [
+        {
+          "phase": "anbacken",
+          "duration_min": 20,
+          "temp_c": 250.0,
+          "steam": true
+        },
+        {
+          "phase": "ausbacken",
+          "duration_min": 15,
+          "temp_c": 210.0,
+          "steam": false
+        }
+      ],
+      "notes": "Emmer sehr schonend kneten (max. 10 Min.); Neigt zum Breitlaufen [18, 19]."
+    },
+    {
+      "id": "brot_holzfaeller",
+      "name": "Holzfäller Schnittbrot",
+      "description": "Großes, rustikales Ruchbrot mit extrem langer kalter Führung.",
+      "status": "active",
+      "version": 1,
+      "tags": ["sauerteig", "ruchmehl", "hefe", "übernachtgare"],
+      "yield": { "loaf_count_default": 1, "target_dough_weight_g": 2200 },
+      "formula": {
+        "flours": [
+          { "mehl_id": "mehl_ruch_1050", "percent": 100.0, "amount_g": 1000 }
+        ],
+        "water_g": 720,
+        "salt_g": 25,
+        "starter": { "amount_g": 450, "hydration_percent": 100.0 },
+        "additional_ingredients": [
+          { "name": "Olivenöl", "amount_g": 30 },
+          { "name": "Frischhefe", "amount_g": 6 }
+        ]
+      },
+      "targets": { "hydration_percent": 72.0, "dough_temp_c": 24.0 },
+      "process_template": [
+        {
+          "key": "autolyse",
+          "label": "Autolyse",
+          "duration_min": 120,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "stockgare_kalt",
+          "label": "Stockgare (Kühlschrank)",
+          "duration_min": 1200,
+          "target_temp_c": 5.0
+        },
+        {
+          "key": "stueckgare",
+          "label": "Stückgare",
+          "duration_min": 90,
+          "target_temp_c": 22.0
+        },
+        {
+          "key": "backen",
+          "label": "Backen",
+          "duration_min": 50,
+          "target_temp_c": 230.0
+        }
+      ],
+      "bake_profile": [
+        {
+          "phase": "anbacken",
+          "duration_min": 20,
+          "temp_c": 250.0,
+          "steam": true
+        },
+        {
+          "phase": "ausbacken",
+          "duration_min": 30,
+          "temp_c": 230.0,
+          "steam": false
+        }
+      ],
+      "notes": "Nach der Kühlschrankgare 1 Std. akklimatisieren lassen; rautenförmig einschneiden [20, 21]."
+    },
+    {
+      "id": "brot_no_knead_landbrot",
+      "name": "No-Knead Sauerteig Landbrot",
+      "description": "Ein unkompliziertes Brot, das seine Struktur allein durch Zeit und Fermentation aufbaut.",
+      "status": "active",
+      "version": 1,
+      "tags": ["sauerteig", "no-knead", "ruchmehl"],
+      "yield": { "loaf_count_default": 1, "target_dough_weight_g": 950 },
+      "formula": {
+        "flours": [
+          { "mehl_id": "mehl_ruch_1050", "percent": 88.0, "amount_g": 440 },
+          { "mehl_id": "mehl_roggen_schrot", "percent": 12.0, "amount_g": 60 }
+        ],
+        "water_g": 400,
+        "salt_g": 12,
+        "starter": { "amount_g": 40, "hydration_percent": 100.0 },
+        "additional_ingredients": []
+      },
+      "targets": { "hydration_percent": 80.0, "dough_temp_c": 35.0 },
+      "process_template": [
+        {
+          "key": "stockgare_warm",
+          "label": "Anspringen (RT)",
+          "duration_min": 180,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "fermentation_kalt",
+          "label": "Stockgare (Kühlschrank)",
+          "duration_min": 2880,
+          "target_temp_c": 5.0
+        },
+        {
+          "key": "stueckgare",
+          "label": "Stückgare (Kühlschrank)",
+          "duration_min": 1440,
+          "target_temp_c": 5.0
+        },
+        {
+          "key": "backen",
+          "label": "Backen",
+          "duration_min": 55,
+          "target_temp_c": 210.0
+        }
+      ],
+      "bake_profile": [
+        {
+          "phase": "anbacken",
+          "duration_min": 40,
+          "temp_c": 230.0,
+          "steam": true
+        },
+        {
+          "phase": "ausbacken",
+          "duration_min": 15,
+          "temp_c": 210.0,
+          "steam": false
+        }
+      ],
+      "notes": "Backen idealerweise im Gusseisentopf für perfekte Dampfatmosphäre [22, 23]."
+    },
+    {
+      "id": "brot_multisaaten_sauerteig",
+      "name": "Multisaaten Sauerteig Brot",
+      "description": "Nährstoffreiches Brot mit gerösteten Kernen und langer Autolyse-Phase.",
+      "status": "active",
+      "version": 1,
+      "tags": ["sauerteig", "saaten", "quellstück", "ruchmehl"],
+      "yield": { "loaf_count_default": 2, "target_dough_weight_g": 1100 },
+      "formula": {
+        "flours": [
+          { "mehl_id": "mehl_ruch_1050", "percent": 80.0, "amount_g": 400 },
+          { "mehl_id": "mehl_roggen_1150", "percent": 20.0, "amount_g": 100 }
+        ],
+        "water_g": 480,
+        "salt_g": 14,
+        "starter": { "amount_g": 220, "hydration_percent": 100.0 },
+        "additional_ingredients": [
+          { "name": "Leinsamen", "amount_g": 40 },
+          { "name": "Sonnenblumenkerne", "amount_g": 40 },
+          { "name": "Kürbiskerne", "amount_g": 40 },
+          { "name": "Sesam", "amount_g": 40 }
+        ]
+      },
+      "targets": { "hydration_percent": 96.0, "dough_temp_c": 24.0 },
+      "process_template": [
+        {
+          "key": "vorteige",
+          "label": "Vorteig & Quellstück",
+          "duration_min": 720,
+          "target_temp_c": 22.0
+        },
+        {
+          "key": "autolyse",
+          "label": "Autolyse",
+          "duration_min": 720,
+          "target_temp_c": 22.0
+        },
+        {
+          "key": "stockgare",
+          "label": "Stockgare",
+          "duration_min": 180,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "stueckgare",
+          "label": "Stückgare",
+          "duration_min": 50,
+          "target_temp_c": 24.0
+        }
+      ],
+      "bake_profile": [
+        {
+          "phase": "anbacken",
+          "duration_min": 15,
+          "temp_c": 250.0,
+          "steam": true
+        },
+        {
+          "phase": "ausbacken",
+          "duration_min": 35,
+          "temp_c": 220.0,
+          "steam": false
+        }
+      ],
+      "notes": "Saaten vor dem Quellen anrösten; Verschluss nach oben in den Gärkorb [24, 25]."
+    },
+    {
+      "id": "brot_einkorn_urdinkel",
+      "name": "Einkorn UrDinkel Vollkornbrot",
+      "description": "Gesundes Urkornbrot mit sehr weichem Teig, stabilisiert in der Kastenform.",
+      "status": "active",
+      "version": 1,
+      "tags": ["sauerteig", "einkorn", "urdinkel", "kastenform"],
+      "yield": { "loaf_count_default": 1, "target_dough_weight_g": 850 },
+      "formula": {
+        "flours": [
+          {
+            "mehl_id": "mehl_einkorn_vollkorn",
+            "percent": 50.0,
+            "amount_g": 170
+          },
+          {
+            "mehl_id": "mehl_urdinkel_vollkorn",
+            "percent": 50.0,
+            "amount_g": 180
+          }
+        ],
+        "water_g": 420,
+        "salt_g": 10,
+        "starter": { "amount_g": 155, "hydration_percent": 100.0 },
+        "additional_ingredients": [
+          { "name": "Frischhefe (Poolish)", "amount_g": 1 }
+        ]
+      },
+      "targets": { "hydration_percent": 120.0, "dough_temp_c": 24.0 },
+      "process_template": [
+        {
+          "key": "vorteige",
+          "label": "Poolish & Sauerteig",
+          "duration_min": 720,
+          "target_temp_c": 22.0
+        },
+        {
+          "key": "stueckgare",
+          "label": "Stückgare (Kasten)",
+          "duration_min": 30,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "backen",
+          "label": "Backen",
+          "duration_min": 45,
+          "target_temp_c": 210.0
+        }
+      ],
+      "bake_profile": [
+        {
+          "phase": "anbacken",
+          "duration_min": 35,
+          "temp_c": 250.0,
+          "steam": false
+        },
+        {
+          "phase": "ausbacken",
+          "duration_min": 10,
+          "temp_c": 210.0,
+          "steam": false
+        }
+      ],
+      "notes": "Teig nur grob mischen, nicht kneten; Messer zum Einschneiden in Öl tauchen [26, 27]."
+    },
+    {
+      "id": "brot_mediterran_dinkel",
+      "name": "Mediterranes Dinkel-Sauerteigbrot (Same-Day)",
+      "description": "Ein aromatisches Kräuterbrot mit Olivenöl und Röstzwiebeln, das ohne Übernachtgare auskommt.",
+      "status": "active",
+      "version": 1,
+      "tags": ["sauerteig", "dinkel", "same-day", "mediterran"],
+      "yield": { "loaf_count_default": 1, "target_dough_weight_g": 1050 },
+      "formula": {
+        "flours": [
+          { "mehl_id": "mehl_dinkel_630", "percent": 70.0, "amount_g": 350 },
+          { "mehl_id": "mehl_weizen_550", "percent": 30.0, "amount_g": 150 }
+        ],
+        "water_g": 340,
+        "salt_g": 10,
+        "starter": { "amount_g": 100, "hydration_percent": 100.0 },
+        "additional_ingredients": [
+          { "name": "Olivenöl", "amount_g": 20 },
+          { "name": "Leinsamen", "amount_g": 25 },
+          { "name": "Sesam", "amount_g": 25 },
+          { "name": "Röstzwiebeln", "amount_g": 30 },
+          { "name": "Oregano (getrocknet)", "amount_g": 4 }
+        ]
+      },
+      "targets": { "hydration_percent": 68.0, "dough_temp_c": 24.0 },
+      "process_template": [
+        {
+          "key": "mischen",
+          "label": "Teig mischen",
+          "duration_min": 10,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "stockgare",
+          "label": "Stockgare (RT)",
+          "duration_min": 210,
+          "target_temp_c": 23.0
+        },
+        {
+          "key": "stueckgare",
+          "label": "Stückgare (RT)",
+          "duration_min": 150,
+          "target_temp_c": 22.0
+        },
+        {
+          "key": "backen",
+          "label": "Backen",
+          "duration_min": 45,
+          "target_temp_c": 250.0
+        }
+      ],
+      "bake_profile": [
+        {
+          "phase": "anbacken",
+          "duration_min": 20,
+          "temp_c": 250.0,
+          "steam": true
+        },
+        {
+          "phase": "ausbacken",
+          "duration_min": 25,
+          "temp_c": 220.0,
+          "steam": false
+        }
+      ],
+      "notes": "Dinkel nicht überkneten! Passt perfekt zu Antipasti und Grillabenden. [1-3]"
+    },
+    {
+      "id": "brot_dinkel_roggen_speck_sauerteig",
+      "name": "Herzhaftes Dinkel-Roggen-Speckbrot",
+      "description": "Kräftiges Sauerteigbrot mit Röstzwiebeln und gebratenem Speck für maximale Würze.",
+      "status": "active",
+      "version": 1,
+      "tags": ["sauerteig", "dinkel", "roggen", "herzhaft", "speck"],
+      "yield": { "loaf_count_default": 1, "target_dough_weight_g": 1150 },
+      "formula": {
+        "flours": [
+          {
+            "mehl_id": "mehl_dinkel_vollkorn",
+            "percent": 80.0,
+            "amount_g": 400
+          },
+          {
+            "mehl_id": "mehl_roggen_vollkorn",
+            "percent": 20.0,
+            "amount_g": 100
+          }
+        ],
+        "water_g": 360,
+        "salt_g": 11,
+        "starter": { "amount_g": 100, "hydration_percent": 100.0 },
+        "additional_ingredients": [
+          { "name": "Speckwürfel (ausgelassen)", "amount_g": 90 },
+          { "name": "Röstzwiebeln", "amount_g": 60 },
+          { "name": "Honig", "amount_g": 5 },
+          { "name": "Trockenhefe (optional)", "amount_g": 2 }
+        ]
+      },
+      "targets": { "hydration_percent": 72.0, "dough_temp_c": 24.0 },
+      "process_template": [
+        {
+          "key": "autolyse",
+          "label": "Autolyse",
+          "duration_min": 45,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "stockgare",
+          "label": "Stockgare",
+          "duration_min": 150,
+          "target_temp_c": 22.0
+        },
+        {
+          "key": "stueckgare",
+          "label": "Stückgare (RT oder KS)",
+          "duration_min": 90,
+          "target_temp_c": 22.0
+        },
+        {
+          "key": "backen",
+          "label": "Backen",
+          "duration_min": 55,
+          "target_temp_c": 230.0
+        }
+      ],
+      "bake_profile": [
+        {
+          "phase": "anbacken",
+          "duration_min": 15,
+          "temp_c": 230.0,
+          "steam": true
+        },
+        {
+          "phase": "ausbacken",
+          "duration_min": 40,
+          "temp_c": 200.0,
+          "steam": false
+        }
+      ],
+      "notes": "Speck und Zwiebeln immer komplett ausgekühlt einkneten! [4-6]"
+    },
+    {
+      "id": "brot_dinkel_roggen_speck_hefe",
+      "name": "Dinkel-Roggen-Speckbrot (Schnelle Hefe-Variante)",
+      "description": "Saftiges Brot mit Autolyse-Vorteil und Trockenhefe, veredelt mit Speck und Körnermix.",
+      "status": "active",
+      "version": 1,
+      "tags": ["hefe", "dinkel", "roggen", "schnell", "autolyse"],
+      "yield": { "loaf_count_default": 1, "target_dough_weight_g": 1100 },
+      "formula": {
+        "flours": [
+          { "mehl_id": "mehl_dinkel_630", "percent": 60.0, "amount_g": 300 },
+          { "mehl_id": "mehl_roggen_1150", "percent": 40.0, "amount_g": 200 }
+        ],
+        "water_g": 370,
+        "salt_g": 10,
+        "starter": null,
+        "additional_ingredients": [
+          { "name": "Trockenhefe", "amount_g": 7 },
+          { "name": "Speckwürfel", "amount_g": 100 },
+          { "name": "Röstzwiebeln", "amount_g": 25 },
+          { "name": "Leinsamen geschrotet", "amount_g": 30 },
+          { "name": "Sesam", "amount_g": 20 },
+          { "name": "Haferflocken", "amount_g": 20 },
+          { "name": "Olivenöl", "amount_g": 10 }
+        ]
+      },
+      "targets": { "hydration_percent": 74.0, "dough_temp_c": 24.0 },
+      "process_template": [
+        {
+          "key": "autolyse",
+          "label": "Autolyse (Mehl+Wasser)",
+          "duration_min": 30,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "kneten",
+          "label": "Hefe & Salz einarbeiten",
+          "duration_min": 7,
+          "target_temp_c": 24.0
+        },
+        {
+          "key": "stockgare",
+          "label": "Erste Gehzeit",
+          "duration_min": 75,
+          "target_temp_c": 22.0
+        },
+        {
+          "key": "stueckgare",
+          "label": "Stückgare",
+          "duration_min": 40,
+          "target_temp_c": 22.0
+        }
+      ],
+      "bake_profile": [
+        {
+          "phase": "anbacken",
+          "duration_min": 10,
+          "temp_c": 230.0,
+          "steam": true
+        },
+        {
+          "phase": "ausbacken",
+          "duration_min": 38,
+          "temp_c": 200.0,
+          "steam": false
+        }
+      ],
+      "notes": "Reihenfolge wichtig: Speck & Zwiebeln erst ganz zum Schluss unterheben, damit der Teig nicht reißt. [7-10]"
+    }
+  ]
+}

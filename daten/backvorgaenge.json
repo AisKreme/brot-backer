@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-02-12T16:35:00+01:00",
+  "items": [
+    {
+      "id": "bv_2024_06_26_001",
+      "recipe_id": "brot_buchweizen_sauerteig",
+      "recipe_version": 1,
+      "recipe_snapshot": {
+        "name": "Buchweizen Sauerteigbrot (Erfolg Irina)",
+        "hydration_percent": 75.0
+      },
+      "status": "completed",
+      "planned_bake_date": "2024-06-26",
+      "started_at": "2024-06-25T19:00:00+02:00",
+      "ended_at": "2024-06-26T11:00:00+02:00",
+      "scale_factor": 1.0,
+      "target": {
+        "loaf_count": 1,
+        "target_dough_weight_g": 1300
+      },
+      "ingredient_usage": [
+        {
+          "mehl_id": "wasser",
+          "planned_g": 380,
+          "actual_g": 300,
+          "stock_deducted_g": 300
+        }
+      ],
+      "step_runs": [
+        {
+          "key": "stueckgare",
+          "planned_duration_min": 840,
+          "actual_duration_min": 120,
+          "avg_temp_c": 22.0,
+          "note": "Stückgare 2 Stunden im Gärkörbchen bei Raumtemperatur statt Kühlschrank.",
+          "actual_start_at": null,
+          "actual_end_at": null
+        }
+      ],
+      "measurements": [],
+      "outcome": {
+        "rating": 5,
+        "crumb": "schoen",
+        "crust": "knusprig",
+        "volume": "gut",
+        "taste_note": "Buchweizen etwas streng, aber Form und Krume top."
+      },
+      "issues": [],
+      "notes": "Wassermenge auf 300g reduziert, direkt auf Pizzastein gebacken [1].",
+      "attachments": [],
+      "custom": {
+        "baking_surface": "Pizzastein"
+      },
+      "created_at": "2024-06-26T12:00:00+02:00",
+      "updated_at": "2024-06-26T12:00:00+02:00"
+    },
+    {
+      "id": "bv_2024_08_24_001",
+      "recipe_id": "brot_buchweizen_sauerteig",
+      "recipe_version": 1,
+      "recipe_snapshot": {
+        "name": "Buchweizen Sauerteigbrot (Fehlschlag Daniela)",
+        "hydration_percent": 74.0
+      },
+      "status": "completed",
+      "planned_bake_date": "2024-08-24",
+      "started_at": "2024-08-23T18:00:00+02:00",
+      "ended_at": "2024-08-24T09:00:00+02:00",
+      "scale_factor": 1.0,
+      "target": {
+        "loaf_count": 1,
+        "target_dough_weight_g": 1250
+      },
+      "ingredient_usage": [
+        {
+          "mehl_id": "wasser",
+          "planned_g": 380,
+          "actual_g": 290,
+          "stock_deducted_g": 290
+        }
+      ],
+      "step_runs": [
+        {
+          "key": "stueckgare",
+          "planned_duration_min": 840,
+          "actual_duration_min": 720,
+          "avg_temp_c": 5.0,
+          "note": "Nach 12h im Kühlschrank vollkommen übergart.",
+          "actual_start_at": null,
+          "actual_end_at": null
+        }
+      ],
+      "measurements": [],
+      "outcome": {
+        "rating": 2,
+        "crumb": "nass_klebrig",
+        "crust": "k.A.",
+        "volume": "flach",
+        "taste_note": ""
+      },
+      "issues": [
+        "overproofed",
+        "sticky_dough"
+      ],
+      "notes": "Trotz Reduktion auf 290g Wasser massiv nass und klebrig [2].",
+      "attachments": [],
+      "custom": {},
+      "created_at": "2024-08-24T10:00:00+02:00",
+      "updated_at": "2024-08-24T10:00:00+02:00"
+    },
+    {
+      "id": "bv_2025_02_05_001",
+      "recipe_id": "brot_sauerteig_1x1",
+      "recipe_version": 1,
+      "recipe_snapshot": {
+        "name": "Sauerteig Brot 1x1 (Outdoor Frank)",
+        "hydration_percent": 70.0
+      },
+      "status": "completed",
+      "planned_bake_date": "2025-02-05",
+      "started_at": "2025-02-05T08:00:00+01:00",
+      "ended_at": "2025-02-05T16:30:00+01:00",
+      "scale_factor": 1.0,
+      "target": {
+        "loaf_count": 1,
+        "target_dough_weight_g": 1800
+      },
+      "ingredient_usage": [],
+      "step_runs": [
+        {
+          "key": "stueckgare",
+          "planned_duration_min": 720,
+          "actual_duration_min": 360,
+          "avg_temp_c": 22.0,
+          "note": "Kühlschrankgare durch 6h Raumtemperatur ersetzt.",
+          "actual_start_at": null,
+          "actual_end_at": null
+        }
+      ],
+      "measurements": [],
+      "outcome": {
+        "rating": 5,
+        "crumb": "perfekt",
+        "crust": "rustikal",
+        "volume": "gut",
+        "taste_note": "Gelingt auch im Dutch Oven hervorragend."
+      },
+      "issues": [],
+      "notes": "Im Petromax FT4.5 (Gusseisentopf) gebacken [3].",
+      "attachments": [],
+      "custom": {
+        "oven_type": "Dutch Oven"
+      },
+      "created_at": "2025-02-05T17:00:00+01:00",
+      "updated_at": "2025-02-05T17:00:00+01:00"
+    },
+    {
+      "id": "bv_2021_10_14_001",
+      "recipe_id": "brot_emmer_vollkorn",
+      "recipe_version": 1,
+      "recipe_snapshot": {
+        "name": "Emmer-Weizen Sauerteig (Nicole)",
+        "hydration_percent": 75.0
+      },
+      "status": "completed",
+      "planned_bake_date": "2021-10-14",
+      "started_at": "2021-10-13T20:00:00+02:00",
+      "ended_at": "2021-10-14T10:30:00+02:00",
+      "scale_factor": 1.0,
+      "target": {
+        "loaf_count": 1,
+        "target_dough_weight_g": 1100
+      },
+      "ingredient_usage": [],
+      "step_runs": [
+        {
+          "key": "vorteige",
+          "planned_duration_min": 180,
+          "actual_duration_min": 720,
+          "avg_temp_c": 5.0,
+          "note": "Brühstück und Vorteig über Nacht gekühlt.",
+          "actual_start_at": null,
+          "actual_end_at": null
+        }
+      ],
+      "measurements": [],
+      "outcome": {
+        "rating": 5,
+        "crumb": "pflufig",
+        "crust": "knackig",
+        "volume": "gut",
+        "taste_note": "Extrem lecker, Emmer sehr fein gemahlen."
+      },
+      "issues": [],
+      "notes": "Im Römertopf gebacken [4].",
+      "attachments": [],
+      "custom": {
+        "oven_type": "Römertopf"
+      },
+      "created_at": "2021-10-14T11:00:00+02:00",
+      "updated_at": "2021-10-14T11:00:00+02:00"
+    },
+    {
+      "id": "bv_2024_06_04_001",
+      "recipe_id": "brot_marcels_ruchmehl",
+      "recipe_version": 1,
+      "recipe_snapshot": {
+        "name": "Marcels Sauerteigbrot (Christina)",
+        "hydration_percent": 85.0
+      },
+      "status": "completed",
+      "planned_bake_date": "2024-06-04",
+      "started_at": "2024-06-03T18:00:00+02:00",
+      "ended_at": "2024-06-04T09:30:00+02:00",
+      "scale_factor": 1.0,
+      "target": {
+        "loaf_count": 1,
+        "target_dough_weight_g": 1330
+      },
+      "ingredient_usage": [],
+      "step_runs": [],
+      "measurements": [],
+      "outcome": {
+        "rating": 2,
+        "crumb": "zu_grosse_loecher",
+        "crust": "k.A.",
+        "volume": "flach",
+        "taste_note": "Geschmacklich ok, aber Struktur fehlte."
+      },
+      "issues": [
+        "too_liquid_dough"
+      ],
+      "notes": "Zweiter Versuch missglückt: Teig extrem flüssig, konnte nicht rund gewirkt werden [5].",
+      "attachments": [],
+      "custom": {},
+      "created_at": "2024-06-04T12:00:00+02:00",
+      "updated_at": "2024-06-04T12:00:00+02:00"
+    },
+    {
+      "id": "bv_2025_01_13_001",
+      "recipe_id": "brot_multisaaten_sauerteig",
+      "recipe_version": 1,
+      "recipe_snapshot": {
+        "name": "Multisaaten Sauerteig Brot (Moni K.)",
+        "hydration_percent": 96.0
+      },
+      "status": "completed",
+      "planned_bake_date": "2025-01-13",
+      "started_at": "2025-01-13T07:00:00+01:00",
+      "ended_at": "2025-01-13T14:00:00+01:00",
+      "scale_factor": 1.0,
+      "target": {
+        "loaf_count": 2,
+        "target_dough_weight_g": 1100
+      },
+      "ingredient_usage": [],
+      "step_runs": [],
+      "measurements": [],
+      "outcome": {
+        "rating": 5,
+        "crumb": "fest_stabil",
+        "crust": "k.A.",
+        "volume": "gut",
+        "taste_note": "Neues Lieblingsbrot."
+      },
+      "issues": [],
+      "notes": "Teig war ein wenig fester als im Video gezeigt [6].",
+      "attachments": [],
+      "custom": {},
+      "created_at": "2025-01-13T15:00:00+01:00",
+      "updated_at": "2025-01-13T15:00:00+01:00"
+    }
+  ]
+}
