@@ -1,0 +1,221 @@
+{
+    "schema_version": 1,
+    "updated_at": "2026-02-13T08:58:19+01:00",
+    "items": [
+        {
+            "id": "ki_847a0195fe4a",
+            "created_at": "2026-02-12T23:04:26+01:00",
+            "backvorgang_id": "bv_2024_06_04_001",
+            "recipe_id": "brot_marcels_ruchmehl",
+            "recipe_name": "Marcels Sauerteigbrot (Christina)",
+            "model": "gemini-2.5-flash-lite",
+            "status_snapshot": "completed",
+            "user_question": "",
+            "overall_rating_1_10": 2,
+            "summary": "Der zweite Versuch mit diesem Rezept scheiterte, da der Teig extrem flüssig war. Dies führte zu einem flachen Brot mit zu großen Löchern in der Krume. Geschmacklich war das Brot akzeptabel, aber die Struktur war nicht wie gewünscht.",
+            "review": {
+                "persona": "meisterbaecker",
+                "overall_rating_1_10": 2,
+                "summary": "Der zweite Versuch mit diesem Rezept scheiterte, da der Teig extrem flüssig war. Dies führte zu einem flachen Brot mit zu großen Löchern in der Krume. Geschmacklich war das Brot akzeptabel, aber die Struktur war nicht wie gewünscht.",
+                "strengths": [
+                    "Geschmacklich akzeptabel",
+                    "Grundrezeptur scheint Potenzial zu haben"
+                ],
+                "issues": [
+                    {
+                        "topic": "Teigkonsistenz",
+                        "severity": "high",
+                        "details": "Der Teig war extrem flüssig und ließ sich nicht rund wirken. Dies deutet auf eine zu hohe Hydration oder unzureichende Glutenentwicklung hin."
+                    },
+                    {
+                        "topic": "Krume",
+                        "severity": "high",
+                        "details": "Zu große Löcher in der Krume, was oft ein Zeichen für übermäßige Gärung oder eine zu flüssige Teigstruktur ist, die nicht gehalten werden kann."
+                    },
+                    {
+                        "topic": "Volumen",
+                        "severity": "high",
+                        "details": "Das Brot war flach, was direkt mit der fehlenden Teigstruktur und der zu hohen Flüssigkeit zusammenhängt."
+                    },
+                    {
+                        "topic": "Kneten/Bassinage",
+                        "severity": "medium",
+                        "details": "Die Bassinage (Zusatzwasser) könnte zu früh oder zu viel gewesen sein, was die Glutenstruktur überfordert hat."
+                    },
+                    {
+                        "topic": "Gärkontrolle",
+                        "severity": "medium",
+                        "details": "Die Gärzeiten und -temperaturen könnten angepasst werden müssen, um die Struktur des flüssigeren Teigs besser zu unterstützen."
+                    },
+                    {
+                        "topic": "Backen",
+                        "severity": "low",
+                        "details": "Die Kruste wird als 'k.A.' bewertet, was bedeutet, dass sie nicht explizit beurteilt wurde. Dies könnte verbessert werden, indem man die Backtemperatur und -zeit optimiert."
+                    }
+                ],
+                "missing_data_suggestions": [
+                    {
+                        "field": "ingredient_usage",
+                        "reason": "Die genauen Mengen der verwendeten Zutaten sind nicht dokumentiert. Dies ist essenziell für die Reproduzierbarkeit und Fehleranalyse.",
+                        "suggested_value": "Liste aller Zutaten mit exakten Gramm-Angaben",
+                        "confidence": "high"
+                    },
+                    {
+                        "field": "step_runs",
+                        "reason": "Details zu den einzelnen Prozessschritten (Knetzeit, Stockgare, Stückgare, Temperaturen) fehlen. Dies erschwert die Analyse von Gär- und Entwicklungsprozessen.",
+                        "suggested_value": "Zeitstempel und Temperaturen für jeden Schritt",
+                        "confidence": "high"
+                    },
+                    {
+                        "field": "measurements",
+                        "reason": "Keine Messwerte wie Teigtemperatur nach dem Kneten oder während der Gare sind vorhanden. Diese sind wichtig zur Steuerung des Prozesses.",
+                        "suggested_value": "Teigtemperatur nach Kneten, während der Gare",
+                        "confidence": "medium"
+                    },
+                    {
+                        "field": "crust",
+                        "reason": "Die Kruste wurde nicht bewertet. Eine detaillierte Beschreibung (Farbe, Dicke, Knusprigkeit) wäre hilfreich.",
+                        "suggested_value": "Beschreibung der Kruste (Farbe, Dicke, Knusprigkeit)",
+                        "confidence": "low"
+                    }
+                ],
+                "ingredient_usage_suggestions": [],
+                "next_actions": [
+                    "Überprüfen Sie die Wassermenge im Verhältnis zum Mehl. Bei 85% Hydration ist eine starke Glutenentwicklung entscheidend.",
+                    "Reduzieren Sie die Wassermenge für die Bassinage oder führen Sie sie später und in kleineren Schritten hinzu.",
+                    "Stellen Sie sicher, dass das Ruchmehl und die anderen Mehle ausreichend Zeit zur Wasseraufnahme haben (Autolyse).",
+                    "Passen Sie die Gärzeiten an die flüssigere Teigbeschaffenheit an, eventuell kürzere Stockgare und längere, kühlere Stückgare.",
+                    "Dokumentieren Sie alle Zutatenmengen und Prozessschritte genau für zukünftige Analysen."
+                ]
+            },
+            "ingredient_changes_applied": 0,
+            "review_in_backvorgang_saved": true
+        },
+        {
+            "id": "ki_bbcfe190e24b",
+            "created_at": "2026-02-13T08:58:19+01:00",
+            "backvorgang_id": "bv_2026_02_12_012",
+            "recipe_id": "brot_dinkel_roggen_speck_sauerteig",
+            "recipe_name": "Herzhaftes Dinkel-Roggen-Speckbrot",
+            "model": "gemini-2.5-flash-lite",
+            "status_snapshot": "completed",
+            "user_question": "",
+            "overall_rating_1_10": 2,
+            "summary": "Der gesamte Backvorgang wurde auf eine Minute pro Schritt reduziert, was jegliche Teigentwicklung und Gärung verhindert. Die meisten Zutaten wurden nicht verwendet. Dies ist kein Backvorgang, sondern eine reine Protokollierung von Fehlern.",
+            "review": {
+                "persona": "meisterbaecker",
+                "overall_rating_1_10": 2,
+                "summary": "Der gesamte Backvorgang wurde auf eine Minute pro Schritt reduziert, was jegliche Teigentwicklung und Gärung verhindert. Die meisten Zutaten wurden nicht verwendet. Dies ist kein Backvorgang, sondern eine reine Protokollierung von Fehlern.",
+                "strengths": [
+                    "Die grundlegenden Prozessschritte sind im Ablauf vorhanden.",
+                    "Die geplanten Mengen der Hauptmehle (Dinkel, Roggen) und Wasser wurden korrekt erfasst."
+                ],
+                "issues": [
+                    {
+                        "topic": "Prozessdauer",
+                        "severity": "high",
+                        "details": "Alle Gär- und Ruhezeiten (Autolyse, Stockgare, Stückgare) sowie die Backzeit wurden auf jeweils nur 1 Minute reduziert. Dies ist bei weitem nicht ausreichend für die Teigentwicklung und das Backen."
+                    },
+                    {
+                        "topic": "Zutatenverwendung",
+                        "severity": "high",
+                        "details": "Salz, Sauerteig, Speck, Röstzwiebeln und Honig wurden nicht verwendet (actual_g = 0), obwohl sie laut Rezept vorgesehen sind. Dies ist kritisch für Geschmack und Struktur."
+                    },
+                    {
+                        "topic": "Teigentwicklung",
+                        "severity": "high",
+                        "details": "Die extrem kurzen Gärzeiten verhindern die Entwicklung von Glutenstruktur und Aroma, was zu einem flachen, geschmacklosen Brot führt."
+                    },
+                    {
+                        "topic": "Backzeit",
+                        "severity": "high",
+                        "details": "Eine Backzeit von nur 1 Minute reicht nicht aus, um das Brot durchzubacken und eine Kruste zu entwickeln."
+                    },
+                    {
+                        "topic": "Sauerteigführung",
+                        "severity": "high",
+                        "details": "Die Stockgare ist ein kritischer Schritt für die Sauerteigentwicklung. Eine Minute ist hierfür völlig unzureichend."
+                    },
+                    {
+                        "topic": "Temperaturkontrolle",
+                        "severity": "medium",
+                        "details": "Es fehlen Angaben zu den Teig- und Umgebungstemperaturen während der Gärphasen, was eine Beurteilung der Gärfortschritte erschwert."
+                    }
+                ],
+                "missing_data_suggestions": [
+                    {
+                        "field": "Autolyse Dauer",
+                        "reason": "Die geplante Autolysezeit von 45 Minuten wurde nicht eingehalten.",
+                        "suggested_value": "45",
+                        "confidence": "high"
+                    },
+                    {
+                        "field": "Stockgare Dauer",
+                        "reason": "Die geplante Stockgarezeit von 150 Minuten wurde nicht eingehalten.",
+                        "suggested_value": "150",
+                        "confidence": "high"
+                    },
+                    {
+                        "field": "Stückgare Dauer",
+                        "reason": "Die geplante Stückgarezeit von 90 Minuten wurde nicht eingehalten.",
+                        "suggested_value": "90",
+                        "confidence": "high"
+                    },
+                    {
+                        "field": "Backen Dauer",
+                        "reason": "Die geplante Backzeit von 55 Minuten wurde nicht eingehalten.",
+                        "suggested_value": "55",
+                        "confidence": "high"
+                    },
+                    {
+                        "field": "Teigtemperatur",
+                        "reason": "Die Teigtemperatur ist entscheidend für die Gärgeschwindigkeit und die Sauerteigaktivität.",
+                        "suggested_value": "24.0",
+                        "confidence": "medium"
+                    }
+                ],
+                "ingredient_usage_suggestions": [
+                    {
+                        "ingredient_id": "salz",
+                        "planned_g": 11,
+                        "actual_g": 0,
+                        "note": "Salz wurde im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt. Dies beeinflusst Teigstruktur und Geschmack negativ."
+                    },
+                    {
+                        "ingredient_id": "sauerteig",
+                        "planned_g": 100,
+                        "actual_g": 0,
+                        "note": "Der Sauerteig (Starter) wurde im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt. Dies ist kritisch für ein Sauerteigbrot."
+                    },
+                    {
+                        "ingredient_id": "speck",
+                        "planned_g": 90,
+                        "actual_g": 0,
+                        "note": "Speckwürfel wurden im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt."
+                    },
+                    {
+                        "ingredient_id": "roestzwiebeln",
+                        "planned_g": 60,
+                        "actual_g": 0,
+                        "note": "Röstzwiebeln wurden im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt."
+                    },
+                    {
+                        "ingredient_id": "honig",
+                        "planned_g": 5,
+                        "actual_g": 0,
+                        "note": "Honig wurde im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt."
+                    }
+                ],
+                "next_actions": [
+                    "Überprüfen Sie die Protokollierung der einzelnen Prozessschritte auf Korrektheit.",
+                    "Stellen Sie sicher, dass alle geplanten Zutaten (Salz, Sauerteig, Speck, Zwiebeln, Honig) tatsächlich verwendet werden.",
+                    "Führen Sie den Backvorgang gemäß den geplanten Zeiten und Temperaturen durch.",
+                    "Dokumentieren Sie die Teigtemperatur während der Gärphasen.",
+                    "Überprüfen Sie das Endergebnis (Brot) auf Krume, Kruste und Geschmack."
+                ]
+            },
+            "ingredient_changes_applied": 0,
+            "review_in_backvorgang_saved": true
+        }
+    ]
+}

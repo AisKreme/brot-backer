@@ -3,7 +3,11 @@
 # Hier befindet sich bewusst KEINE Fachlogik (Rezepte, Mehle, etc.).
 
 from Klassenpakete.liveRenderer import LiveRenderer
+from Klassenpakete.backvorgang_menu import BackvorgangMenu
+from Klassenpakete.daten_menu import DatenMenu
+from Klassenpakete.ki_assistent import KiAssistentMenu
 from Klassenpakete.mehle_menu import MehleMenu
+from Klassenpakete.rezepte_menu import RezepteMenu
 from Klassenpakete.menu import Menu
 from Klassenpakete.navigation import Navigation
 
@@ -20,6 +24,7 @@ def main() -> None:
         "Rezepte verwalten",
         "Mehle verwalten",
         "Daten anzeigen",
+        "KI fragen",
         "Beenden",
     ]
 
@@ -43,8 +48,16 @@ def main() -> None:
             if isinstance(auswahl, int):
                 ausgewaehlterPunkt = menuePunkte[auswahl]
 
-                if ausgewaehlterPunkt == "Mehle verwalten":
+                if ausgewaehlterPunkt == "Backvorgang starten":
+                    menu.starte_untermenue(BackvorgangMenu(), navigation, renderer)
+                elif ausgewaehlterPunkt == "Rezepte verwalten":
+                    menu.starte_untermenue(RezepteMenu(), navigation, renderer)
+                elif ausgewaehlterPunkt == "Daten anzeigen":
+                    menu.starte_untermenue(DatenMenu(), navigation, renderer)
+                elif ausgewaehlterPunkt == "Mehle verwalten":
                     menu.starte_untermenue(MehleMenu(), navigation, renderer)
+                elif ausgewaehlterPunkt == "KI fragen":
+                    menu.starte_untermenue(KiAssistentMenu(), navigation, renderer)
                 elif ausgewaehlterPunkt == "Beenden":
                     programmLaeuft = False
     finally:

@@ -1,309 +1,192 @@
-# Brot-Backer -- Projektübersicht
-
-## Ziel des Projekts
-
-Dieses Python-3-Projekt ist ein terminalbasiertes Lern- und
-Praxisprojekt zum Planen, Verwalten und Auswerten von Sauerteigbroten.
-
-Das Projekt verfolgt zwei Hauptziele: - Unterstützung beim Brotbacken
-(Rezepte, Hydration, Zeiten, Backvorgänge) - Sauberes Erlernen
-objektorientierter Programmierung (OOP) in Python
-
----
-
-## Gesamtarchitektur
-
-Das Projekt ist in vier Ebenen unterteilt:
-
-1.  Terminal UI (Menüs, Navigation, Farben)
-2.  Anwendungslogik (Rezepte, Backvorgänge, Berechnungen)
-3.  Datenmodelle (Klassen)
-4.  Persistenz (JSON-Dateien)
-
-Die Abhängigkeiten verlaufen immer von oben nach unten.
-
----
-
-## Zentrale Konzepte
-
-### Mehl
-
-Stammdaten für Mehle, die in mehreren Rezepten verwendet werden können.
-
-Eigenschaften: - Art (z. B. Weizen, Roggen) - Typ (z. B. 405, 1050,
-Vollkorn) - Eigenname (optional) - empfohlene Hydration (optional)
-
-### BrotRezept
-
-Beschreibt ein wiederverwendbares Brot-Rezept.
-
-Enthält: - Name - Mehlanteile - Wasser - Salz - Sauerteig - Zusätze -
-Zeiten - Berechnung der Hydration
-
-### Backvorgang
-
-Ein konkretes Backereignis eines Rezepts.
-
-Enthält: - Referenz auf ein BrotRezept - Datum - Reale Zeiten -
-Temperaturen - Bewertung und Notizen
-
-### Zeiten
-
-Strukturierte Sammlung aller Reife- und Backzeiten: - Autolyse - Dehnen
-& Falten - Stockgare (Raum / Kalt) - Stückgare (Raum / Kalt) - Backzeit
-
-### Zusatz
-
-Zusätzliche Zutaten wie Saaten oder Zwiebeln: - Name - Menge - Einheit -
-Behandlung (z. B. geröstet)
-
----
-
-## Klassenübersicht (vereinfacht)
-
-Mehl\
-↳ MehlAnteil\
-↳ BrotRezept\
-↳ Backvorgang
-
-BrotRezept\
-↳ Zeiten\
-↳ Zusatz
-
----
-
-## Ordnerstruktur
-
-brot_backer/
-
-- main.py
-- daten/
-  - mehle.json
-  - brote.json
-  - backvorgaenge.json
-- Klassenpakete/
-  - mehl.py
-  - mehl_anteil.py
-  - zusatz.py
-  - zeiten.py
-  - brot_rezept.py
-  - backvorgang.py
-  - json_manager.py
-  - menu.py
-  - navigation.py
-  - ki_assistent.py
-
----
-
-## Terminal-Bedienung
-
-- Navigation mit Pfeiltasten (readchar)
-- ENTER bestätigen, ESC abbrechen
-- Schrittweiten:
-  - Mehl: 10 g
-  - Wasser: 10 ml
-  - Sauerteig: 1 g
-- Farbige Darstellung zur besseren Übersicht
-
----
-
-## JSON-Dateien
-
-Die Daten werden in gut lesbaren JSON-Dateien gespeichert:
-
-- mehle.json
-- brote.json
-- backvorgaenge.json
-
-Die JSON-Dateien enthalten ausschließlich Daten, keine Logik.
-
----
-
-## KI-Vorbereitung
-
-Geplant ist eine optionale KI-Integration:
-
-- Bewertung von Rezepten
-- Vorschläge zur Hydration
-- Analyse von Backvorgängen
-
-Die Architektur ist so aufgebaut, dass die KI später ergänzt werden
-kann, ohne bestehende Klassen zu ändern.
-
----
-
-## Entwicklungsphasen
-
-1.  Projektstruktur & Mehlverwaltung
-2.  BrotRezept & Hydration
-3.  Terminal-Menü & Navigation
-4.  Backvorgänge
-5.  Feinschliff & KI-Integration
-
----
-
-## Lernziele
-
-- Objektorientiertes Denken
-- Saubere Projektstruktur
-- JSON-Datenhaltung
-- Terminal-UI mit Tastaturnavigation
-- Vorbereitung auf KI-Erweiterungen
-
----
-
-## Backlog
-
-# 🥖 Brot-Backer Terminal App – Architektur-Refactoring Plan
-
-## 🎯 Ziel
-
-Die Anwendung soll eine professionelle High-End Terminal-App werden, mit:
-
-- Einem zentralen Rendering-System (Rich Live)
-- Nur einer Live-Instanz zur selben Zeit
-- Einheitlicher Navigation
-- Keine doppelten Event-Loops
-- Keine mehrfach implementierte Pfeiltasten-Logik
-- Klare Trennung von UI, Logik und Daten
-
----
-
-# 🔍 Aktuelle Probleme
-
-## ❌ 1. Mehrere Live-Instanzen
-
-Aktuell werden mehrere `Live()` Kontexte erzeugt:
-
-- In `Menu`
-- In `mehl_per_pfeiltasten_auswaehlen`
-- Teilweise bei Tabellenanzeige
-
-Das führt zu:
-
-- Flackern
-- Doppeltem Rendering
-- Inkonsistenter Darstellung
-
----
-
-## ❌ 2. Navigation wird mehrfach instanziiert
-
-Es existieren mehrere `Navigation()` Objekte.
-
-Ziel:
-👉 Pro UI-Kontext genau **eine Navigation-Instanz**.
-
----
-
-## ❌ 3. Doppelte Pfeiltasten-Logik
-
-Die gleiche Logik existiert in:
-
-- `Menu`
-- `mehl_per_pfeiltasten_auswaehlen`
-- `neues_mehl_hinzufuegen`
-
-Ziel:
-👉 Eine zentrale Auswahl-Logik.
-
----
-
-## ❌ 4. LiveRenderer wird nicht zentral genutzt
-
-Er baut Tabellen, kontrolliert aber nicht das Rendering.
-
-Ziel:
-👉 LiveRenderer wird das zentrale UI-System.
-
----
-
-# 🏗 Zielarchitektur
-
-```
-App
- └── LiveRenderer (eine Instanz)
-      ├── render(Menu)
-      ├── render(Mehle Tabelle)
-      ├── render(Bearbeiten View)
-      └── render(Info View)
+# brot-backer
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Status](https://img.shields.io/badge/Status-Aktiv-brightgreen)](https://github.com/AisKreme/brot-backer)
+[![Letzter Commit](https://img.shields.io/github/last-commit/AisKreme/brot-backer)](https://github.com/AisKreme/brot-backer/commits)
+[![Lizenz](https://img.shields.io/github/license/AisKreme/brot-backer)](#lizenz)
+[![Stars](https://img.shields.io/github/stars/AisKreme/brot-backer?style=social)](https://github.com/AisKreme/brot-backer/stargazers)
+
+Terminalbasierte Python-App zum Planen, Durchführen und Auswerten von Brot-Backvorgängen – inklusive Rezeptverwaltung, Mehlbestand und KI-Analyse.
+
+## Quickstart (60 Sekunden)
+
+```bash
+git clone https://github.com/AisKreme/brot-backer.git
+cd brot-backer
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 main.py
 ```
 
-Nicht mehr:
+## Was das Programm macht
 
-```
-Menu → eigenes Live
-MehleMenu → eigenes Live
-Tabellen → eigenes Live
-```
+- Verwalten von **Mehlen** (Art, Typ, Bestand in Gramm)
+- Anzeigen und Bearbeiten von **Rezepten** (Hydration, Formel, Prozess, Backprofil)
+- Starten, Pausieren, Fortsetzen und Abschließen von **Backvorgängen**
+- Geführtes **Schritt-Tracking mit Timer**
+- Bearbeiten von `ingredient_usage` pro Backvorgang (Soll/Ist/Abzug)
+- Automatischer **Bestandsabzug** nach Abschluss
+- **KI-Assistent** für Bewertung, Verbesserungsvorschläge und Verlaufsansicht
 
----
+## Voraussetzungen
 
-# 🚀 Refactoring-Schritte
+- Python **3.10+** (empfohlen: 3.11 oder 3.12)
+- Terminal mit Tastatureingaben (z. B. iTerm2)
 
-## ✅ Schritt 1 – LiveRenderer zentralisieren
+## Installation (ausführlich)
 
-- Eine Console
-- Eine Live-Instanz
-- Eine zentrale render_loop()
+Wichtig: Es müssen **alle Pakete aus `requirements.txt`** installiert werden.
 
----
+1. Repository klonen:
 
-## ✅ Schritt 2 – MehleMenu bereinigen
-
-Entfernen:
-
-- `from rich.live import Live`
-- `Console()` Instanzen
-- Eigene Live-Kontexte
-- Eigene Navigation-Instanzen
-
----
-
-## ✅ Schritt 3 – start()-Methode umbauen
-
-Keine eigene Event-Loop mehr.
-Nur:
-
-```
-auswahlIndex = self.menu.anzeigen(self.navigation)
+```bash
+git clone https://github.com/AisKreme/brot-backer.git
+cd brot-backer
 ```
 
----
+2. Virtuelle Umgebung erstellen und aktivieren:
 
-## ✅ Schritt 4 – Auswahl-Logik vereinheitlichen
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
-`mehl_per_pfeiltasten_auswaehlen` soll keine eigene Live-Logik mehr enthalten.
+Windows (PowerShell):
 
----
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
 
-## ✅ Schritt 5 – Neues Mehl hinzufügen vereinheitlichen
+3. Abhängigkeiten installieren:
 
-Keine eigenen while-Loops mehr.
-Nur noch Nutzung von `Menu.anzeigen()`.
+```bash
+pip install -r requirements.txt
+```
 
----
+## Anforderungen aus `requirements.txt`
 
-# 🧠 Endziel
+- `readchar`
+- `rich`
+- `google-genai`
 
-- Kein Flackern
-- Kein doppeltes Rendering
-- Eine Live-Instanz
-- Saubere Architektur
-- Professionelle Terminal-App-Struktur
+Auch wenn KI optional ist, sollte `google-genai` installiert sein, damit das Menü vollständig funktioniert.
 
----
+## Anwendung starten
 
-# 📌 Nächster Schritt
+```bash
+python3 main.py
+```
 
-Wir gehen das Refactoring nun Schritt für Schritt durch:
+Hinweise:
 
-1. LiveRenderer finalisieren
-2. Menu vollständig auf LiveRenderer umbauen
-3. MehleMenu bereinigen
-4. Navigation vereinheitlichen
-5. JSON-Zugriff sauber kapseln
+- `GOOGLE_API_KEY` ist für KI-Anfragen erforderlich.
+- `GOOGLE_MODEL` ist optional; ohne Angabe wird ein Standardmodell verwendet.
+- `.env` ist in `.gitignore` eingetragen und sollte nicht committed werden.
 
----
+## Bedienung im Terminal
 
-💡 Ziel: Eine stabile, erweiterbare Terminal-App-Architektur mit sauberer UI-Trennung.
+Globale Steuerung:
+
+- `UP` / `DOWN`: Navigation in Menüs und Listen
+- `LEFT` / `RIGHT`: Seitenwechsel in Detailansichten
+- `ENTER`: Auswahl bestätigen
+- `BACKSPACE`: Zurück
+- `ESC`: Abbrechen/Zurück
+
+Backvorgang-Tracking:
+
+- `ENTER`: Schritt starten bzw. Timer-Schritt beenden
+- `p`: Backvorgang pausieren
+
+## Menü-Übersicht
+
+1. **Backvorgang starten**
+
+- Neuen Backvorgang aus Rezept anlegen
+- Skalierungsfaktor setzen (`scale_factor`)
+- Zutaten je Backvorgang anpassen
+- Geführtes Tracking mit Timer
+- Laufende/pausierte Backvorgänge fortsetzen
+
+2. **Rezepte verwalten**
+
+- Rezepte anzeigen
+- Rezeptdaten bearbeiten
+- Prozessschritte und Backprofil pflegen
+
+3. **Mehle verwalten**
+
+- Mehlbestand anzeigen
+- Neues Mehl hinzufügen
+- Mehle bearbeiten/löschen
+
+4. **Daten anzeigen**
+
+- Laufende und pausierte Backvorgänge als Übersicht
+
+5. **KI fragen**
+
+- Backvorgang analysieren lassen
+- KI-Vorschläge als Diff prüfen und übernehmen
+- KI-Bewertungen speichern
+- Gespeicherte KI-Antworten strukturiert anzeigen
+
+## Datenablage (JSON)
+
+Alle Programmdaten liegen unter `daten/`:
+
+- `mehle.json` – Mehlstammdaten und Bestand
+- `brote.json` – Rezepte
+- `backvorgaenge.json` – Backvorgänge und Trackingdaten
+- `ki_anfragen.json` – gespeicherte KI-Antworten
+
+Schema-Grundstruktur:
+
+```json
+{
+  "schema_version": 1,
+  "updated_at": "ISO-8601",
+  "items": []
+}
+```
+
+## Projektstruktur
+
+```text
+brot-backer/
+├── main.py
+├── requirements.txt
+├── .env
+├── daten/
+│   ├── mehle.json
+│   ├── brote.json
+│   ├── backvorgaenge.json
+│   └── ki_anfragen.json
+└── Klassenpakete/
+    ├── backvorgang.py
+    ├── backvorgang_menu.py
+    ├── brot_rezept.py
+    ├── daten_menu.py
+    ├── json_manager.py
+    ├── ki_assistent.py
+    ├── liveRenderer.py
+    ├── mehl.py
+    ├── mehle_menu.py
+    ├── menu.py
+    ├── navigation.py
+    ├── rezepte_menu.py
+    ├── ui_layout.py
+    ├── zeiten.py
+    └── zusatz.py
+```
+
+## Häufige Probleme
+
+- `GOOGLE_API_KEY ist nicht gesetzt`
+  - `.env` prüfen oder API-Key im KI-Menü hinterlegen.
+- `ModuleNotFoundError`
+  - Virtuelle Umgebung aktivieren und `pip install -r requirements.txt` ausführen.
+- Leere Tabellen/Ansichten
+  - Prüfen, ob in `daten/*.json` bereits Einträge vorhanden sind.

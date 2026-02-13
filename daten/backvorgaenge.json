@@ -1,275 +1,2228 @@
 {
-  "schema_version": 1,
-  "updated_at": "2026-02-12T16:35:00+01:00",
-  "items": [
-    {
-      "id": "bv_2024_06_26_001",
-      "recipe_id": "brot_buchweizen_sauerteig",
-      "recipe_version": 1,
-      "recipe_snapshot": {
-        "name": "Buchweizen Sauerteigbrot (Erfolg Irina)",
-        "hydration_percent": 75.0
-      },
-      "status": "completed",
-      "planned_bake_date": "2024-06-26",
-      "started_at": "2024-06-25T19:00:00+02:00",
-      "ended_at": "2024-06-26T11:00:00+02:00",
-      "scale_factor": 1.0,
-      "target": {
-        "loaf_count": 1,
-        "target_dough_weight_g": 1300
-      },
-      "ingredient_usage": [
+    "schema_version": 1,
+    "updated_at": "2026-02-13T08:58:19+01:00",
+    "items": [
         {
-          "mehl_id": "wasser",
-          "planned_g": 380,
-          "actual_g": 300,
-          "stock_deducted_g": 300
-        }
-      ],
-      "step_runs": [
+            "id": "bv_2024_06_26_001",
+            "recipe_id": "brot_buchweizen_sauerteig",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Buchweizen Sauerteigbrot (Erfolg Irina)",
+                "hydration_percent": 75.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2024-06-26",
+            "started_at": "2024-06-25T19:00:00+02:00",
+            "ended_at": "2024-06-26T11:00:00+02:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 1300
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "wasser",
+                    "planned_g": 380,
+                    "actual_g": 300,
+                    "stock_deducted_g": 300
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 840,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": 120,
+                    "avg_temp_c": 22.0,
+                    "note": "Stückgare 2 Stunden im Gärkörbchen bei Raumtemperatur statt Kühlschrank."
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": 5,
+                "crumb": "schoen",
+                "crust": "knusprig",
+                "volume": "gut",
+                "taste_note": "Buchweizen etwas streng, aber Form und Krume top."
+            },
+            "issues": [],
+            "notes": "Wassermenge auf 300g reduziert, direkt auf Pizzastein gebacken [1].",
+            "attachments": [],
+            "custom": {
+                "baking_surface": "Pizzastein"
+            },
+            "created_at": "2024-06-26T12:00:00+02:00",
+            "updated_at": "2024-06-26T12:00:00+02:00"
+        },
         {
-          "key": "stueckgare",
-          "planned_duration_min": 840,
-          "actual_duration_min": 120,
-          "avg_temp_c": 22.0,
-          "note": "Stückgare 2 Stunden im Gärkörbchen bei Raumtemperatur statt Kühlschrank.",
-          "actual_start_at": null,
-          "actual_end_at": null
-        }
-      ],
-      "measurements": [],
-      "outcome": {
-        "rating": 5,
-        "crumb": "schoen",
-        "crust": "knusprig",
-        "volume": "gut",
-        "taste_note": "Buchweizen etwas streng, aber Form und Krume top."
-      },
-      "issues": [],
-      "notes": "Wassermenge auf 300g reduziert, direkt auf Pizzastein gebacken [1].",
-      "attachments": [],
-      "custom": {
-        "baking_surface": "Pizzastein"
-      },
-      "created_at": "2024-06-26T12:00:00+02:00",
-      "updated_at": "2024-06-26T12:00:00+02:00"
-    },
-    {
-      "id": "bv_2024_08_24_001",
-      "recipe_id": "brot_buchweizen_sauerteig",
-      "recipe_version": 1,
-      "recipe_snapshot": {
-        "name": "Buchweizen Sauerteigbrot (Fehlschlag Daniela)",
-        "hydration_percent": 74.0
-      },
-      "status": "completed",
-      "planned_bake_date": "2024-08-24",
-      "started_at": "2024-08-23T18:00:00+02:00",
-      "ended_at": "2024-08-24T09:00:00+02:00",
-      "scale_factor": 1.0,
-      "target": {
-        "loaf_count": 1,
-        "target_dough_weight_g": 1250
-      },
-      "ingredient_usage": [
+            "id": "bv_2024_08_24_001",
+            "recipe_id": "brot_buchweizen_sauerteig",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Buchweizen Sauerteigbrot (Fehlschlag Daniela)",
+                "hydration_percent": 74.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2024-08-24",
+            "started_at": "2024-08-23T18:00:00+02:00",
+            "ended_at": "2024-08-24T09:00:00+02:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 1250
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "wasser",
+                    "planned_g": 380,
+                    "actual_g": 290,
+                    "stock_deducted_g": 290
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 840,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": 720,
+                    "avg_temp_c": 5.0,
+                    "note": "Nach 12h im Kühlschrank vollkommen übergart."
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": 2,
+                "crumb": "nass_klebrig",
+                "crust": "k.A.",
+                "volume": "flach",
+                "taste_note": ""
+            },
+            "issues": [
+                "overproofed",
+                "sticky_dough"
+            ],
+            "notes": "Trotz Reduktion auf 290g Wasser massiv nass und klebrig [2].",
+            "attachments": [],
+            "custom": {},
+            "created_at": "2024-08-24T10:00:00+02:00",
+            "updated_at": "2024-08-24T10:00:00+02:00"
+        },
         {
-          "mehl_id": "wasser",
-          "planned_g": 380,
-          "actual_g": 290,
-          "stock_deducted_g": 290
-        }
-      ],
-      "step_runs": [
+            "id": "bv_2025_02_05_001",
+            "recipe_id": "brot_sauerteig_1x1",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Sauerteig Brot 1x1 (Outdoor Frank)",
+                "hydration_percent": 70.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2025-02-05",
+            "started_at": "2025-02-05T08:00:00+01:00",
+            "ended_at": "2025-02-05T16:30:00+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 1800
+            },
+            "ingredient_usage": [],
+            "step_runs": [
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 720,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": 360,
+                    "avg_temp_c": 22.0,
+                    "note": "Kühlschrankgare durch 6h Raumtemperatur ersetzt."
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": 5,
+                "crumb": "perfekt",
+                "crust": "rustikal",
+                "volume": "gut",
+                "taste_note": "Gelingt auch im Dutch Oven hervorragend."
+            },
+            "issues": [],
+            "notes": "Im Petromax FT4.5 (Gusseisentopf) gebacken [3].",
+            "attachments": [],
+            "custom": {
+                "oven_type": "Dutch Oven"
+            },
+            "created_at": "2025-02-05T17:00:00+01:00",
+            "updated_at": "2025-02-05T17:00:00+01:00"
+        },
         {
-          "key": "stueckgare",
-          "planned_duration_min": 840,
-          "actual_duration_min": 720,
-          "avg_temp_c": 5.0,
-          "note": "Nach 12h im Kühlschrank vollkommen übergart.",
-          "actual_start_at": null,
-          "actual_end_at": null
-        }
-      ],
-      "measurements": [],
-      "outcome": {
-        "rating": 2,
-        "crumb": "nass_klebrig",
-        "crust": "k.A.",
-        "volume": "flach",
-        "taste_note": ""
-      },
-      "issues": [
-        "overproofed",
-        "sticky_dough"
-      ],
-      "notes": "Trotz Reduktion auf 290g Wasser massiv nass und klebrig [2].",
-      "attachments": [],
-      "custom": {},
-      "created_at": "2024-08-24T10:00:00+02:00",
-      "updated_at": "2024-08-24T10:00:00+02:00"
-    },
-    {
-      "id": "bv_2025_02_05_001",
-      "recipe_id": "brot_sauerteig_1x1",
-      "recipe_version": 1,
-      "recipe_snapshot": {
-        "name": "Sauerteig Brot 1x1 (Outdoor Frank)",
-        "hydration_percent": 70.0
-      },
-      "status": "completed",
-      "planned_bake_date": "2025-02-05",
-      "started_at": "2025-02-05T08:00:00+01:00",
-      "ended_at": "2025-02-05T16:30:00+01:00",
-      "scale_factor": 1.0,
-      "target": {
-        "loaf_count": 1,
-        "target_dough_weight_g": 1800
-      },
-      "ingredient_usage": [],
-      "step_runs": [
+            "id": "bv_2021_10_14_001",
+            "recipe_id": "brot_emmer_vollkorn",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Emmer-Weizen Sauerteig (Nicole)",
+                "hydration_percent": 75.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2021-10-14",
+            "started_at": "2021-10-13T20:00:00+02:00",
+            "ended_at": "2021-10-14T10:30:00+02:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 1100
+            },
+            "ingredient_usage": [],
+            "step_runs": [
+                {
+                    "key": "vorteige",
+                    "planned_duration_min": 180,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": 720,
+                    "avg_temp_c": 5.0,
+                    "note": "Brühstück und Vorteig über Nacht gekühlt."
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": 5,
+                "crumb": "pflufig",
+                "crust": "knackig",
+                "volume": "gut",
+                "taste_note": "Extrem lecker, Emmer sehr fein gemahlen."
+            },
+            "issues": [],
+            "notes": "Im Römertopf gebacken [4].",
+            "attachments": [],
+            "custom": {
+                "oven_type": "Römertopf"
+            },
+            "created_at": "2021-10-14T11:00:00+02:00",
+            "updated_at": "2021-10-14T11:00:00+02:00"
+        },
         {
-          "key": "stueckgare",
-          "planned_duration_min": 720,
-          "actual_duration_min": 360,
-          "avg_temp_c": 22.0,
-          "note": "Kühlschrankgare durch 6h Raumtemperatur ersetzt.",
-          "actual_start_at": null,
-          "actual_end_at": null
-        }
-      ],
-      "measurements": [],
-      "outcome": {
-        "rating": 5,
-        "crumb": "perfekt",
-        "crust": "rustikal",
-        "volume": "gut",
-        "taste_note": "Gelingt auch im Dutch Oven hervorragend."
-      },
-      "issues": [],
-      "notes": "Im Petromax FT4.5 (Gusseisentopf) gebacken [3].",
-      "attachments": [],
-      "custom": {
-        "oven_type": "Dutch Oven"
-      },
-      "created_at": "2025-02-05T17:00:00+01:00",
-      "updated_at": "2025-02-05T17:00:00+01:00"
-    },
-    {
-      "id": "bv_2021_10_14_001",
-      "recipe_id": "brot_emmer_vollkorn",
-      "recipe_version": 1,
-      "recipe_snapshot": {
-        "name": "Emmer-Weizen Sauerteig (Nicole)",
-        "hydration_percent": 75.0
-      },
-      "status": "completed",
-      "planned_bake_date": "2021-10-14",
-      "started_at": "2021-10-13T20:00:00+02:00",
-      "ended_at": "2021-10-14T10:30:00+02:00",
-      "scale_factor": 1.0,
-      "target": {
-        "loaf_count": 1,
-        "target_dough_weight_g": 1100
-      },
-      "ingredient_usage": [],
-      "step_runs": [
+            "id": "bv_2024_06_04_001",
+            "recipe_id": "brot_marcels_ruchmehl",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Marcels Sauerteigbrot (Christina)",
+                "hydration_percent": 85.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2024-06-04",
+            "started_at": "2024-06-03T18:00:00+02:00",
+            "ended_at": "2024-06-04T09:30:00+02:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 1330
+            },
+            "ingredient_usage": [],
+            "step_runs": [],
+            "measurements": [],
+            "outcome": {
+                "rating": 2,
+                "crumb": "zu_grosse_loecher",
+                "crust": "k.A.",
+                "volume": "flach",
+                "taste_note": "Geschmacklich ok, aber Struktur fehlte."
+            },
+            "issues": [
+                "too_liquid_dough"
+            ],
+            "notes": "Zweiter Versuch missglückt: Teig extrem flüssig, konnte nicht rund gewirkt werden [5].",
+            "attachments": [],
+            "custom": {
+                "ki_reviews": [
+                    {
+                        "created_at": "2026-02-12T23:04:26+01:00",
+                        "model": "gemini-2.5-flash-lite",
+                        "review": {
+                            "persona": "meisterbaecker",
+                            "overall_rating_1_10": 2,
+                            "summary": "Der zweite Versuch mit diesem Rezept scheiterte, da der Teig extrem flüssig war. Dies führte zu einem flachen Brot mit zu großen Löchern in der Krume. Geschmacklich war das Brot akzeptabel, aber die Struktur war nicht wie gewünscht.",
+                            "strengths": [
+                                "Geschmacklich akzeptabel",
+                                "Grundrezeptur scheint Potenzial zu haben"
+                            ],
+                            "issues": [
+                                {
+                                    "topic": "Teigkonsistenz",
+                                    "severity": "high",
+                                    "details": "Der Teig war extrem flüssig und ließ sich nicht rund wirken. Dies deutet auf eine zu hohe Hydration oder unzureichende Glutenentwicklung hin."
+                                },
+                                {
+                                    "topic": "Krume",
+                                    "severity": "high",
+                                    "details": "Zu große Löcher in der Krume, was oft ein Zeichen für übermäßige Gärung oder eine zu flüssige Teigstruktur ist, die nicht gehalten werden kann."
+                                },
+                                {
+                                    "topic": "Volumen",
+                                    "severity": "high",
+                                    "details": "Das Brot war flach, was direkt mit der fehlenden Teigstruktur und der zu hohen Flüssigkeit zusammenhängt."
+                                },
+                                {
+                                    "topic": "Kneten/Bassinage",
+                                    "severity": "medium",
+                                    "details": "Die Bassinage (Zusatzwasser) könnte zu früh oder zu viel gewesen sein, was die Glutenstruktur überfordert hat."
+                                },
+                                {
+                                    "topic": "Gärkontrolle",
+                                    "severity": "medium",
+                                    "details": "Die Gärzeiten und -temperaturen könnten angepasst werden müssen, um die Struktur des flüssigeren Teigs besser zu unterstützen."
+                                },
+                                {
+                                    "topic": "Backen",
+                                    "severity": "low",
+                                    "details": "Die Kruste wird als 'k.A.' bewertet, was bedeutet, dass sie nicht explizit beurteilt wurde. Dies könnte verbessert werden, indem man die Backtemperatur und -zeit optimiert."
+                                }
+                            ],
+                            "missing_data_suggestions": [
+                                {
+                                    "field": "ingredient_usage",
+                                    "reason": "Die genauen Mengen der verwendeten Zutaten sind nicht dokumentiert. Dies ist essenziell für die Reproduzierbarkeit und Fehleranalyse.",
+                                    "suggested_value": "Liste aller Zutaten mit exakten Gramm-Angaben",
+                                    "confidence": "high"
+                                },
+                                {
+                                    "field": "step_runs",
+                                    "reason": "Details zu den einzelnen Prozessschritten (Knetzeit, Stockgare, Stückgare, Temperaturen) fehlen. Dies erschwert die Analyse von Gär- und Entwicklungsprozessen.",
+                                    "suggested_value": "Zeitstempel und Temperaturen für jeden Schritt",
+                                    "confidence": "high"
+                                },
+                                {
+                                    "field": "measurements",
+                                    "reason": "Keine Messwerte wie Teigtemperatur nach dem Kneten oder während der Gare sind vorhanden. Diese sind wichtig zur Steuerung des Prozesses.",
+                                    "suggested_value": "Teigtemperatur nach Kneten, während der Gare",
+                                    "confidence": "medium"
+                                },
+                                {
+                                    "field": "crust",
+                                    "reason": "Die Kruste wurde nicht bewertet. Eine detaillierte Beschreibung (Farbe, Dicke, Knusprigkeit) wäre hilfreich.",
+                                    "suggested_value": "Beschreibung der Kruste (Farbe, Dicke, Knusprigkeit)",
+                                    "confidence": "low"
+                                }
+                            ],
+                            "ingredient_usage_suggestions": [],
+                            "next_actions": [
+                                "Überprüfen Sie die Wassermenge im Verhältnis zum Mehl. Bei 85% Hydration ist eine starke Glutenentwicklung entscheidend.",
+                                "Reduzieren Sie die Wassermenge für die Bassinage oder führen Sie sie später und in kleineren Schritten hinzu.",
+                                "Stellen Sie sicher, dass das Ruchmehl und die anderen Mehle ausreichend Zeit zur Wasseraufnahme haben (Autolyse).",
+                                "Passen Sie die Gärzeiten an die flüssigere Teigbeschaffenheit an, eventuell kürzere Stockgare und längere, kühlere Stückgare.",
+                                "Dokumentieren Sie alle Zutatenmengen und Prozessschritte genau für zukünftige Analysen."
+                            ]
+                        }
+                    }
+                ]
+            },
+            "created_at": "2024-06-04T12:00:00+02:00",
+            "updated_at": "2026-02-12T23:04:26+01:00"
+        },
         {
-          "key": "vorteige",
-          "planned_duration_min": 180,
-          "actual_duration_min": 720,
-          "avg_temp_c": 5.0,
-          "note": "Brühstück und Vorteig über Nacht gekühlt.",
-          "actual_start_at": null,
-          "actual_end_at": null
+            "id": "bv_2025_01_13_001",
+            "recipe_id": "brot_multisaaten_sauerteig",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Multisaaten Sauerteig Brot (Moni K.)",
+                "hydration_percent": 96.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2025-01-13",
+            "started_at": "2025-01-13T07:00:00+01:00",
+            "ended_at": "2025-01-13T14:00:00+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 2,
+                "target_dough_weight_g": 1100
+            },
+            "ingredient_usage": [],
+            "step_runs": [],
+            "measurements": [],
+            "outcome": {
+                "rating": 5,
+                "crumb": "fest_stabil",
+                "crust": "k.A.",
+                "volume": "gut",
+                "taste_note": "Neues Lieblingsbrot."
+            },
+            "issues": [],
+            "notes": "Teig war ein wenig fester als im Video gezeigt [6].",
+            "attachments": [],
+            "custom": {},
+            "created_at": "2025-01-13T15:00:00+01:00",
+            "updated_at": "2025-01-13T15:00:00+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_001",
+            "recipe_id": "brot_holzfaeller",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Holzfäller Schnittbrot",
+                "hydration_percent": 72.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2016-02-14",
+            "started_at": "2026-02-12T18:03:45+01:00",
+            "ended_at": "2026-02-12T18:04:24+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 2200
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_ruch_1050",
+                    "planned_g": 1000,
+                    "actual_g": 1000,
+                    "stock_deducted_g": 1000
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 120,
+                    "actual_start_at": "2026-02-12T18:03:45+01:00",
+                    "actual_end_at": "2026-02-12T18:03:49+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": 23.0,
+                    "note": "",
+                    "label": "Autolyse"
+                },
+                {
+                    "key": "stockgare_kalt",
+                    "planned_duration_min": 1200,
+                    "actual_start_at": "2026-02-12T18:04:05+01:00",
+                    "actual_end_at": "2026-02-12T18:04:06+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stockgare (Kühlschrank)"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 90,
+                    "actual_start_at": "2026-02-12T18:04:15+01:00",
+                    "actual_end_at": "2026-02-12T18:04:16+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stückgare"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 50,
+                    "actual_start_at": "2026-02-12T18:04:21+01:00",
+                    "actual_end_at": "2026-02-12T18:04:22+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {},
+            "created_at": "2026-02-12T18:04:46+01:00",
+            "updated_at": "2026-02-12T18:04:46+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_002",
+            "recipe_id": "brot_sauerteig_1x1",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Sauerteig Brot 1x1",
+                "hydration_percent": 70.0
+            },
+            "status": "aborted",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T18:37:12+01:00",
+            "ended_at": "2026-02-12T18:37:45+01:00",
+            "scale_factor": 0.1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 180
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_weizen_550",
+                    "planned_g": 85,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                },
+                {
+                    "mehl_id": "mehl_weizen_vollkorn",
+                    "planned_g": 15,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 30,
+                    "actual_start_at": "2026-02-12T18:37:12+01:00",
+                    "actual_end_at": "2026-02-12T18:37:20+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Autolyse"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 120,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": null,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stockgare"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 720,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": null,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stueckgare"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 50,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": null,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {},
+            "created_at": "2026-02-12T18:27:29+01:00",
+            "updated_at": "2026-02-12T18:37:47+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_003",
+            "recipe_id": "brot_sauerteig_1x1",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Sauerteig Brot 1x1",
+                "hydration_percent": 70.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T18:37:58+01:00",
+            "ended_at": "2026-02-12T18:40:27+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 2,
+                "target_dough_weight_g": 1800
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_weizen_550",
+                    "planned_g": 850,
+                    "actual_g": 850,
+                    "stock_deducted_g": 850
+                },
+                {
+                    "mehl_id": "mehl_weizen_vollkorn",
+                    "planned_g": 150,
+                    "actual_g": 150,
+                    "stock_deducted_g": 150
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 30,
+                    "actual_start_at": "2026-02-12T18:37:58+01:00",
+                    "actual_end_at": "2026-02-12T18:38:01+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Autolyse"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 120,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": 0,
+                    "avg_temp_c": null,
+                    "note": "Uebersprungen.",
+                    "label": "Stockgare"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 720,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": 0,
+                    "avg_temp_c": null,
+                    "note": "Uebersprungen.",
+                    "label": "Stueckgare"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 50,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": 0,
+                    "avg_temp_c": null,
+                    "note": "Uebersprungen.",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "test",
+            "attachments": [],
+            "custom": {
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T18:40:34+01:00"
+            },
+            "created_at": "2026-02-12T18:28:25+01:00",
+            "updated_at": "2026-02-12T18:40:34+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_004",
+            "recipe_id": "brot_einkorn_urdinkel",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Einkorn UrDinkel Vollkornbrot",
+                "hydration_percent": 120.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T18:39:21+01:00",
+            "ended_at": "2026-02-12T18:39:40+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 850
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_einkorn_vollkorn",
+                    "planned_g": 170,
+                    "actual_g": 170,
+                    "stock_deducted_g": 170
+                },
+                {
+                    "mehl_id": "mehl_urdinkel_vollkorn",
+                    "planned_g": 180,
+                    "actual_g": 180,
+                    "stock_deducted_g": 180
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "vorteige",
+                    "planned_duration_min": 720,
+                    "actual_start_at": "2026-02-12T18:39:21+01:00",
+                    "actual_end_at": "2026-02-12T18:39:28+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Poolish & Sauerteig"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 30,
+                    "actual_start_at": "2026-02-12T18:39:29+01:00",
+                    "actual_end_at": "2026-02-12T18:39:31+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stückgare (Kasten)"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 45,
+                    "actual_start_at": "2026-02-12T18:39:36+01:00",
+                    "actual_end_at": "2026-02-12T18:39:38+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": 4,
+                "crumb": "4",
+                "crust": "4",
+                "volume": "4",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T18:39:57+01:00"
+            },
+            "created_at": "2026-02-12T18:39:58+01:00",
+            "updated_at": "2026-02-12T18:39:58+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_005",
+            "recipe_id": "brot_sauerteig_1x1",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Sauerteig Brot 1x1",
+                "hydration_percent": 70.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T18:44:47+01:00",
+            "ended_at": "2026-02-12T18:45:44+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 2,
+                "target_dough_weight_g": 1800
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_weizen_550",
+                    "planned_g": 850,
+                    "actual_g": 850,
+                    "stock_deducted_g": 850
+                },
+                {
+                    "mehl_id": "mehl_weizen_vollkorn",
+                    "planned_g": 150,
+                    "actual_g": 150,
+                    "stock_deducted_g": 150
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 30,
+                    "actual_start_at": "2026-02-12T18:44:47+01:00",
+                    "actual_end_at": "2026-02-12T18:44:50+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Autolyse"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 120,
+                    "actual_start_at": "2026-02-12T18:45:10+01:00",
+                    "actual_end_at": "2026-02-12T18:45:15+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stockgare"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 720,
+                    "actual_start_at": "2026-02-12T18:45:30+01:00",
+                    "actual_end_at": "2026-02-12T18:45:32+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stueckgare"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 50,
+                    "actual_start_at": "2026-02-12T18:45:39+01:00",
+                    "actual_end_at": "2026-02-12T18:45:42+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T18:45:51+01:00"
+            },
+            "created_at": "2026-02-12T18:44:33+01:00",
+            "updated_at": "2026-02-12T18:45:51+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_006",
+            "recipe_id": "brot_holzfaeller",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Holzfäller Schnittbrot",
+                "hydration_percent": 72.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T18:47:18+01:00",
+            "ended_at": "2026-02-12T18:48:28+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 2200
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_ruch_1050",
+                    "planned_g": 1000,
+                    "actual_g": 1000,
+                    "stock_deducted_g": 1000
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 120,
+                    "actual_start_at": "2026-02-12T18:47:18+01:00",
+                    "actual_end_at": "2026-02-12T18:47:19+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Autolyse"
+                },
+                {
+                    "key": "stockgare_kalt",
+                    "planned_duration_min": 1200,
+                    "actual_start_at": "2026-02-12T18:47:41+01:00",
+                    "actual_end_at": "2026-02-12T18:47:42+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stockgare (Kühlschrank)"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 90,
+                    "actual_start_at": "2026-02-12T18:48:09+01:00",
+                    "actual_end_at": "2026-02-12T18:48:14+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stückgare"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 50,
+                    "actual_start_at": "2026-02-12T18:48:25+01:00",
+                    "actual_end_at": "2026-02-12T18:48:26+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T18:48:30+01:00"
+            },
+            "created_at": "2026-02-12T18:47:24+01:00",
+            "updated_at": "2026-02-12T18:48:30+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_007",
+            "recipe_id": "brot_sauerteig_1x1",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Sauerteig Brot 1x1",
+                "hydration_percent": 70.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T18:55:14+01:00",
+            "ended_at": "2026-02-12T18:56:34+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 2,
+                "target_dough_weight_g": 1800
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_weizen_550",
+                    "planned_g": 850,
+                    "actual_g": 850,
+                    "stock_deducted_g": 850
+                },
+                {
+                    "mehl_id": "mehl_weizen_vollkorn",
+                    "planned_g": 150,
+                    "actual_g": 150,
+                    "stock_deducted_g": 150
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 30,
+                    "actual_start_at": "2026-02-12T18:55:14+01:00",
+                    "actual_end_at": "2026-02-12T18:55:16+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Autolyse"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 120,
+                    "actual_start_at": "2026-02-12T18:55:33+01:00",
+                    "actual_end_at": "2026-02-12T18:55:35+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stockgare"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 720,
+                    "actual_start_at": "2026-02-12T18:56:31+01:00",
+                    "actual_end_at": "2026-02-12T18:56:32+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stueckgare"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 50,
+                    "actual_start_at": "2026-02-12T18:56:33+01:00",
+                    "actual_end_at": "2026-02-12T18:56:33+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T18:56:36+01:00"
+            },
+            "created_at": "2026-02-12T18:55:42+01:00",
+            "updated_at": "2026-02-12T18:56:36+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_008",
+            "recipe_id": "brot_sauerteig_1x1",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Sauerteig Brot 1x1",
+                "hydration_percent": 70.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T19:04:20+01:00",
+            "ended_at": "2026-02-12T19:05:09+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 2,
+                "target_dough_weight_g": 1800
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_weizen_550",
+                    "planned_g": 850,
+                    "actual_g": 850,
+                    "stock_deducted_g": 850
+                },
+                {
+                    "mehl_id": "mehl_weizen_vollkorn",
+                    "planned_g": 150,
+                    "actual_g": 150,
+                    "stock_deducted_g": 150
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 30,
+                    "actual_start_at": "2026-02-12T19:04:20+01:00",
+                    "actual_end_at": "2026-02-12T19:04:25+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Autolyse"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 120,
+                    "actual_start_at": "2026-02-12T19:04:43+01:00",
+                    "actual_end_at": "2026-02-12T19:04:44+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stockgare"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 720,
+                    "actual_start_at": "2026-02-12T19:04:56+01:00",
+                    "actual_end_at": "2026-02-12T19:04:56+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stueckgare"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 50,
+                    "actual_start_at": "2026-02-12T19:05:07+01:00",
+                    "actual_end_at": "2026-02-12T19:05:08+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T19:05:18+01:00"
+            },
+            "created_at": "2026-02-12T19:05:19+01:00",
+            "updated_at": "2026-02-12T19:05:19+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_009",
+            "recipe_id": "brot_no_knead_landbrot",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "No-Knead Sauerteig Landbrot",
+                "hydration_percent": 80.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T19:26:02+01:00",
+            "ended_at": "2026-02-12T19:26:40+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 950
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_ruch_1050",
+                    "planned_g": 440,
+                    "actual_g": 440,
+                    "stock_deducted_g": 440
+                },
+                {
+                    "mehl_id": "mehl_roggen_schrot",
+                    "planned_g": 60,
+                    "actual_g": 60,
+                    "stock_deducted_g": 60
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "stockgare_warm",
+                    "planned_duration_min": 180,
+                    "actual_start_at": "2026-02-12T19:26:02+01:00",
+                    "actual_end_at": "2026-02-12T19:26:04+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Anspringen (RT)"
+                },
+                {
+                    "key": "fermentation_kalt",
+                    "planned_duration_min": 2880,
+                    "actual_start_at": "2026-02-12T19:26:16+01:00",
+                    "actual_end_at": "2026-02-12T19:26:19+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stockgare (Kühlschrank)"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 1440,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": 0,
+                    "avg_temp_c": null,
+                    "note": "Uebersprungen.",
+                    "label": "Stückgare (Kühlschrank)"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 55,
+                    "actual_start_at": "2026-02-12T19:26:31+01:00",
+                    "actual_end_at": "2026-02-12T19:26:39+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T19:26:44+01:00"
+            },
+            "created_at": "2026-02-12T19:26:46+01:00",
+            "updated_at": "2026-02-12T19:26:46+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_010",
+            "recipe_id": "brot_dinkel_roggen_speck_hefe",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Dinkel-Roggen-Speckbrot (Schnelle Hefe-Variante)",
+                "hydration_percent": 74.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T19:43:21+01:00",
+            "ended_at": "2026-02-12T19:44:23+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 1100
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_dinkel_630",
+                    "planned_g": 300,
+                    "actual_g": 300,
+                    "stock_deducted_g": 300
+                },
+                {
+                    "mehl_id": "mehl_roggen_1150",
+                    "planned_g": 200,
+                    "actual_g": 200,
+                    "stock_deducted_g": 200
+                },
+                {
+                    "mehl_id": "wasser",
+                    "planned_g": 370,
+                    "actual_g": 370,
+                    "stock_deducted_g": 370
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 30,
+                    "actual_start_at": "2026-02-12T19:43:21+01:00",
+                    "actual_end_at": "2026-02-12T19:43:45+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Autolyse (Mehl+Wasser)"
+                },
+                {
+                    "key": "kneten",
+                    "planned_duration_min": 7,
+                    "actual_start_at": "2026-02-12T19:43:52+01:00",
+                    "actual_end_at": "2026-02-12T19:43:54+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Hefe & Salz einarbeiten"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 75,
+                    "actual_start_at": "2026-02-12T19:43:57+01:00",
+                    "actual_end_at": "2026-02-12T19:44:10+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Erste Gehzeit"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 40,
+                    "actual_start_at": "2026-02-12T19:44:15+01:00",
+                    "actual_end_at": "2026-02-12T19:44:22+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stückgare"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "hydration_percent_used": 74.0,
+                "flour_total_planned_g": 500.0,
+                "hydration_water_planned_g": 370.0,
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T19:44:28+01:00"
+            },
+            "created_at": "2026-02-12T19:44:28+01:00",
+            "updated_at": "2026-02-12T19:44:28+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_011",
+            "recipe_id": "brot_sauerteig_1x1",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Sauerteig Brot 1x1",
+                "hydration_percent": 70.0
+            },
+            "status": "aborted",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T19:45:44+01:00",
+            "ended_at": "2026-02-12T19:45:57+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 2,
+                "target_dough_weight_g": 1800
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_weizen_550",
+                    "planned_g": 850,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                },
+                {
+                    "mehl_id": "mehl_weizen_vollkorn",
+                    "planned_g": 150,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                },
+                {
+                    "mehl_id": "wasser",
+                    "planned_g": 700,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 30,
+                    "actual_start_at": "2026-02-12T19:45:44+01:00",
+                    "actual_end_at": "2026-02-12T19:45:47+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Autolyse"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 120,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": null,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stockgare"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 720,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": null,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stueckgare"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 50,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": null,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "hydration_percent_used": 70.0,
+                "flour_total_planned_g": 1000.0,
+                "hydration_water_planned_g": 700.0
+            },
+            "created_at": "2026-02-12T19:45:59+01:00",
+            "updated_at": "2026-02-12T19:45:59+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_012",
+            "recipe_id": "brot_dinkel_roggen_speck_sauerteig",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Herzhaftes Dinkel-Roggen-Speckbrot",
+                "hydration_percent": 72.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T19:55:30+01:00",
+            "ended_at": "2026-02-12T19:56:20+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 1150
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_dinkel_vollkorn",
+                    "planned_g": 400,
+                    "actual_g": 400,
+                    "stock_deducted_g": 400
+                },
+                {
+                    "mehl_id": "mehl_roggen_vollkorn",
+                    "planned_g": 100,
+                    "actual_g": 100,
+                    "stock_deducted_g": 100
+                },
+                {
+                    "mehl_id": "wasser",
+                    "planned_g": 360,
+                    "actual_g": 360,
+                    "stock_deducted_g": 360
+                },
+                {
+                    "mehl_id": "honig",
+                    "planned_g": 5,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                },
+                {
+                    "mehl_id": "roestzwiebeln",
+                    "planned_g": 60,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                },
+                {
+                    "mehl_id": "salz",
+                    "planned_g": 11,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                },
+                {
+                    "mehl_id": "sauerteig",
+                    "planned_g": 100,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                },
+                {
+                    "mehl_id": "speck",
+                    "planned_g": 90,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 45,
+                    "actual_start_at": "2026-02-12T19:55:30+01:00",
+                    "actual_end_at": "2026-02-12T19:55:31+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Autolyse"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 150,
+                    "actual_start_at": "2026-02-12T19:55:33+01:00",
+                    "actual_end_at": "2026-02-12T19:55:42+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stockgare"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 90,
+                    "actual_start_at": "2026-02-12T19:55:59+01:00",
+                    "actual_end_at": "2026-02-12T19:56:10+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stückgare (RT oder KS)"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 55,
+                    "actual_start_at": "2026-02-12T19:56:15+01:00",
+                    "actual_end_at": "2026-02-12T19:56:18+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "hydration_percent_used": 72.0,
+                "flour_total_planned_g": 500.0,
+                "hydration_water_planned_g": 360.0,
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T19:56:22+01:00",
+                "ki_reviews": [
+                    {
+                        "created_at": "2026-02-12T22:51:55+01:00",
+                        "model": "gemini-2.5-flash-lite",
+                        "review": {
+                            "persona": "meisterbaecker",
+                            "overall_rating_1_10": 3,
+                            "summary": "Der Backvorgang wurde extrem verkürzt, was zu einer unzureichenden Teigentwicklung und wahrscheinlich zu einem minderwertigen Brot führt. Die geplanten Zeiten für Autolyse, Stockgare und Stückgare wurden auf jeweils nur eine Minute reduziert. Das Backen selbst dauerte ebenfalls nur eine Minute. Dies ist bei weitem nicht ausreichend für die Gärung und Entwicklung des Teiges.",
+                            "strengths": [
+                                "Die Zutaten wurden gemäß Rezept verwendet.",
+                                "Die grundlegenden Prozessschritte sind im Ablauf vorhanden."
+                            ],
+                            "issues": [
+                                {
+                                    "topic": "Prozessdauer",
+                                    "severity": "high",
+                                    "details": "Alle Gär- und Ruhezeiten (Autolyse, Stockgare, Stückgare) sowie die Backzeit wurden auf nur 1 Minute reduziert. Dies ist viel zu kurz für eine Teigentwicklung und das Backen."
+                                },
+                                {
+                                    "topic": "Teigentwicklung",
+                                    "severity": "high",
+                                    "details": "Die extrem kurzen Gärzeiten verhindern die Entwicklung von Glutenstruktur und Aroma, was zu einem flachen, geschmacklosen Brot führt."
+                                },
+                                {
+                                    "topic": "Backzeit",
+                                    "severity": "high",
+                                    "details": "Eine Backzeit von nur 1 Minute reicht nicht aus, um das Brot durchzubacken und eine Kruste zu entwickeln."
+                                },
+                                {
+                                    "topic": "Temperaturkontrolle",
+                                    "severity": "medium",
+                                    "details": "Es fehlen Angaben zu den Teig- und Umgebungstemperaturen während der Gärphasen, was eine Beurteilung der Gärfortschritte erschwert."
+                                },
+                                {
+                                    "topic": "Sauerteigführung",
+                                    "severity": "high",
+                                    "details": "Die Stockgare ist ein kritischer Schritt für die Sauerteigentwicklung. Eine Minute ist hierfür völlig unzureichend."
+                                },
+                                {
+                                    "topic": "Zutatenintegration",
+                                    "severity": "medium",
+                                    "details": "Die Zugabe von Speck und Röstzwiebeln wird im Prozess nicht explizit erwähnt, sollte aber idealerweise gegen Ende der Knet- oder Anfang der Stockgare erfolgen."
+                                }
+                            ],
+                            "missing_data_suggestions": [
+                                {
+                                    "field": "Autolyse Dauer",
+                                    "reason": "Die geplante Autolysezeit von 45 Minuten wurde nicht eingehalten.",
+                                    "suggested_value": "45",
+                                    "confidence": "high"
+                                },
+                                {
+                                    "field": "Stockgare Dauer",
+                                    "reason": "Die geplante Stockgarezeit von 150 Minuten wurde nicht eingehalten.",
+                                    "suggested_value": "150",
+                                    "confidence": "high"
+                                },
+                                {
+                                    "field": "Stückgare Dauer",
+                                    "reason": "Die geplante Stückgarezeit von 90 Minuten wurde nicht eingehalten.",
+                                    "suggested_value": "90",
+                                    "confidence": "high"
+                                },
+                                {
+                                    "field": "Backen Dauer",
+                                    "reason": "Die geplante Backzeit von 55 Minuten wurde nicht eingehalten.",
+                                    "suggested_value": "55",
+                                    "confidence": "high"
+                                },
+                                {
+                                    "field": "Teigtemperatur",
+                                    "reason": "Die Teigtemperatur ist entscheidend für die Gärgeschwindigkeit und die Sauerteigaktivität.",
+                                    "suggested_value": "24.0",
+                                    "confidence": "medium"
+                                }
+                            ],
+                            "ingredient_usage_suggestions": [
+                                {
+                                    "ingredient_id": "salz",
+                                    "planned_g": 11,
+                                    "actual_g": 0,
+                                    "note": "Salz wurde im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt. Dies beeinflusst Teigstruktur und Geschmack negativ."
+                                },
+                                {
+                                    "ingredient_id": "sauerteig",
+                                    "planned_g": 100,
+                                    "actual_g": 0,
+                                    "note": "Der Sauerteig (Starter) wurde im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt. Dies ist kritisch für ein Sauerteigbrot."
+                                },
+                                {
+                                    "ingredient_id": "speck",
+                                    "planned_g": 90,
+                                    "actual_g": 0,
+                                    "note": "Speckwürfel wurden im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt."
+                                },
+                                {
+                                    "ingredient_id": "roestzwiebeln",
+                                    "planned_g": 60,
+                                    "actual_g": 0,
+                                    "note": "Röstzwiebeln wurden im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt."
+                                },
+                                {
+                                    "ingredient_id": "honig",
+                                    "planned_g": 5,
+                                    "actual_g": 0,
+                                    "note": "Honig wurde im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt."
+                                }
+                            ],
+                            "next_actions": [
+                                "Überprüfen Sie die Protokollierung der einzelnen Prozessschritte auf Korrektheit.",
+                                "Stellen Sie sicher, dass alle geplanten Zutaten (Salz, Sauerteig, Speck, Zwiebeln, Honig) tatsächlich verwendet werden.",
+                                "Führen Sie den Backvorgang gemäß den geplanten Zeiten und Temperaturen durch.",
+                                "Dokumentieren Sie die Teigtemperatur während der Gärphasen.",
+                                "Überprüfen Sie das Endergebnis (Brot) auf Krume, Kruste und Geschmack."
+                            ]
+                        }
+                    },
+                    {
+                        "created_at": "2026-02-13T08:58:19+01:00",
+                        "model": "gemini-2.5-flash-lite",
+                        "review": {
+                            "persona": "meisterbaecker",
+                            "overall_rating_1_10": 2,
+                            "summary": "Der gesamte Backvorgang wurde auf eine Minute pro Schritt reduziert, was jegliche Teigentwicklung und Gärung verhindert. Die meisten Zutaten wurden nicht verwendet. Dies ist kein Backvorgang, sondern eine reine Protokollierung von Fehlern.",
+                            "strengths": [
+                                "Die grundlegenden Prozessschritte sind im Ablauf vorhanden.",
+                                "Die geplanten Mengen der Hauptmehle (Dinkel, Roggen) und Wasser wurden korrekt erfasst."
+                            ],
+                            "issues": [
+                                {
+                                    "topic": "Prozessdauer",
+                                    "severity": "high",
+                                    "details": "Alle Gär- und Ruhezeiten (Autolyse, Stockgare, Stückgare) sowie die Backzeit wurden auf jeweils nur 1 Minute reduziert. Dies ist bei weitem nicht ausreichend für die Teigentwicklung und das Backen."
+                                },
+                                {
+                                    "topic": "Zutatenverwendung",
+                                    "severity": "high",
+                                    "details": "Salz, Sauerteig, Speck, Röstzwiebeln und Honig wurden nicht verwendet (actual_g = 0), obwohl sie laut Rezept vorgesehen sind. Dies ist kritisch für Geschmack und Struktur."
+                                },
+                                {
+                                    "topic": "Teigentwicklung",
+                                    "severity": "high",
+                                    "details": "Die extrem kurzen Gärzeiten verhindern die Entwicklung von Glutenstruktur und Aroma, was zu einem flachen, geschmacklosen Brot führt."
+                                },
+                                {
+                                    "topic": "Backzeit",
+                                    "severity": "high",
+                                    "details": "Eine Backzeit von nur 1 Minute reicht nicht aus, um das Brot durchzubacken und eine Kruste zu entwickeln."
+                                },
+                                {
+                                    "topic": "Sauerteigführung",
+                                    "severity": "high",
+                                    "details": "Die Stockgare ist ein kritischer Schritt für die Sauerteigentwicklung. Eine Minute ist hierfür völlig unzureichend."
+                                },
+                                {
+                                    "topic": "Temperaturkontrolle",
+                                    "severity": "medium",
+                                    "details": "Es fehlen Angaben zu den Teig- und Umgebungstemperaturen während der Gärphasen, was eine Beurteilung der Gärfortschritte erschwert."
+                                }
+                            ],
+                            "missing_data_suggestions": [
+                                {
+                                    "field": "Autolyse Dauer",
+                                    "reason": "Die geplante Autolysezeit von 45 Minuten wurde nicht eingehalten.",
+                                    "suggested_value": "45",
+                                    "confidence": "high"
+                                },
+                                {
+                                    "field": "Stockgare Dauer",
+                                    "reason": "Die geplante Stockgarezeit von 150 Minuten wurde nicht eingehalten.",
+                                    "suggested_value": "150",
+                                    "confidence": "high"
+                                },
+                                {
+                                    "field": "Stückgare Dauer",
+                                    "reason": "Die geplante Stückgarezeit von 90 Minuten wurde nicht eingehalten.",
+                                    "suggested_value": "90",
+                                    "confidence": "high"
+                                },
+                                {
+                                    "field": "Backen Dauer",
+                                    "reason": "Die geplante Backzeit von 55 Minuten wurde nicht eingehalten.",
+                                    "suggested_value": "55",
+                                    "confidence": "high"
+                                },
+                                {
+                                    "field": "Teigtemperatur",
+                                    "reason": "Die Teigtemperatur ist entscheidend für die Gärgeschwindigkeit und die Sauerteigaktivität.",
+                                    "suggested_value": "24.0",
+                                    "confidence": "medium"
+                                }
+                            ],
+                            "ingredient_usage_suggestions": [
+                                {
+                                    "ingredient_id": "salz",
+                                    "planned_g": 11,
+                                    "actual_g": 0,
+                                    "note": "Salz wurde im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt. Dies beeinflusst Teigstruktur und Geschmack negativ."
+                                },
+                                {
+                                    "ingredient_id": "sauerteig",
+                                    "planned_g": 100,
+                                    "actual_g": 0,
+                                    "note": "Der Sauerteig (Starter) wurde im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt. Dies ist kritisch für ein Sauerteigbrot."
+                                },
+                                {
+                                    "ingredient_id": "speck",
+                                    "planned_g": 90,
+                                    "actual_g": 0,
+                                    "note": "Speckwürfel wurden im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt."
+                                },
+                                {
+                                    "ingredient_id": "roestzwiebeln",
+                                    "planned_g": 60,
+                                    "actual_g": 0,
+                                    "note": "Röstzwiebeln wurden im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt."
+                                },
+                                {
+                                    "ingredient_id": "honig",
+                                    "planned_g": 5,
+                                    "actual_g": 0,
+                                    "note": "Honig wurde im Backvorgang nicht aufgeführt und wahrscheinlich nicht hinzugefügt."
+                                }
+                            ],
+                            "next_actions": [
+                                "Überprüfen Sie die Protokollierung der einzelnen Prozessschritte auf Korrektheit.",
+                                "Stellen Sie sicher, dass alle geplanten Zutaten (Salz, Sauerteig, Speck, Zwiebeln, Honig) tatsächlich verwendet werden.",
+                                "Führen Sie den Backvorgang gemäß den geplanten Zeiten und Temperaturen durch.",
+                                "Dokumentieren Sie die Teigtemperatur während der Gärphasen.",
+                                "Überprüfen Sie das Endergebnis (Brot) auf Krume, Kruste und Geschmack."
+                            ]
+                        }
+                    }
+                ]
+            },
+            "created_at": "2026-02-12T19:56:22+01:00",
+            "updated_at": "2026-02-13T08:58:19+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_013",
+            "recipe_id": "brot_emmer_vollkorn",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Emmer Vollkornbrot",
+                "hydration_percent": 76.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T20:02:22+01:00",
+            "ended_at": "2026-02-12T20:09:33+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 900
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_emmer_vollkorn",
+                    "planned_g": 500,
+                    "actual_g": 500,
+                    "stock_deducted_g": 500
+                },
+                {
+                    "mehl_id": "wasser",
+                    "planned_g": 380,
+                    "actual_g": 380,
+                    "stock_deducted_g": 380
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "vorteige",
+                    "planned_duration_min": 840,
+                    "actual_start_at": "2026-02-12T20:02:22+01:00",
+                    "actual_end_at": "2026-02-12T20:02:34+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Vorteige (Vorabend)"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 60,
+                    "actual_start_at": "2026-02-12T20:08:13+01:00",
+                    "actual_end_at": "2026-02-12T20:08:13+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stockgare"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 60,
+                    "actual_start_at": "2026-02-12T20:08:55+01:00",
+                    "actual_end_at": "2026-02-12T20:09:01+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stückgare"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 35,
+                    "actual_start_at": "2026-02-12T20:09:22+01:00",
+                    "actual_end_at": "2026-02-12T20:09:31+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "hydration_percent_used": 76.0,
+                "flour_total_planned_g": 500.0,
+                "hydration_water_planned_g": 380.0,
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T20:09:37+01:00"
+            },
+            "created_at": "2026-02-12T20:02:39+01:00",
+            "updated_at": "2026-02-12T20:09:37+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_014",
+            "recipe_id": "brot_dinkel_roggen_kalt",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Dinkel-Roggen-Sauerteigbrot",
+                "hydration_percent": 68.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T20:13:49+01:00",
+            "ended_at": "2026-02-12T20:15:06+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 1050
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_dinkel_630",
+                    "planned_g": 250,
+                    "actual_g": 250,
+                    "stock_deducted_g": 250
+                },
+                {
+                    "mehl_id": "mehl_dinkel_vollkorn",
+                    "planned_g": 150,
+                    "actual_g": 150,
+                    "stock_deducted_g": 150
+                },
+                {
+                    "mehl_id": "mehl_roggen_1150",
+                    "planned_g": 100,
+                    "actual_g": 100,
+                    "stock_deducted_g": 100
+                },
+                {
+                    "mehl_id": "wasser",
+                    "planned_g": 340,
+                    "actual_g": 340,
+                    "stock_deducted_g": 340
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 45,
+                    "actual_start_at": "2026-02-12T20:13:49+01:00",
+                    "actual_end_at": "2026-02-12T20:14:16+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Autolyse"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 90,
+                    "actual_start_at": "2026-02-12T20:14:22+01:00",
+                    "actual_end_at": "2026-02-12T20:14:44+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stockgare"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 840,
+                    "actual_start_at": "2026-02-12T20:14:47+01:00",
+                    "actual_end_at": "2026-02-12T20:14:53+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Kalte Stückgare"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 65,
+                    "actual_start_at": "2026-02-12T20:14:57+01:00",
+                    "actual_end_at": "2026-02-12T20:15:05+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "hydration_percent_used": 68.0,
+                "flour_total_planned_g": 500.0,
+                "hydration_water_planned_g": 340.0,
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T20:15:12+01:00"
+            },
+            "created_at": "2026-02-12T20:10:32+01:00",
+            "updated_at": "2026-02-12T20:15:12+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_015",
+            "recipe_id": "brot_sauerteig_1x1",
+            "recipe_version": 1,
+            "recipe_snapshot": {
+                "name": "Sauerteig Brot 1x1",
+                "hydration_percent": 70.0
+            },
+            "status": "paused",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T20:17:58+01:00",
+            "ended_at": null,
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 2,
+                "target_dough_weight_g": 1800
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_weizen_550",
+                    "planned_g": 850,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                },
+                {
+                    "mehl_id": "mehl_weizen_vollkorn",
+                    "planned_g": 150,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                },
+                {
+                    "mehl_id": "wasser",
+                    "planned_g": 700,
+                    "actual_g": 0,
+                    "stock_deducted_g": 0
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 30,
+                    "actual_start_at": "2026-02-12T22:50:15+01:00",
+                    "actual_end_at": "2026-02-12T22:50:18+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Autolyse"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 120,
+                    "actual_start_at": "2026-02-12T22:50:20+01:00",
+                    "actual_end_at": null,
+                    "actual_duration_min": null,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stockgare"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 720,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": null,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stueckgare"
+                },
+                {
+                    "key": "backen",
+                    "planned_duration_min": 50,
+                    "actual_start_at": null,
+                    "actual_end_at": null,
+                    "actual_duration_min": null,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Backen"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "hydration_percent_used": 70.0,
+                "flour_total_planned_g": 1000.0,
+                "hydration_water_planned_g": 700.0
+            },
+            "created_at": "2026-02-12T20:18:04+01:00",
+            "updated_at": "2026-02-12T22:50:21+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_016",
+            "recipe_id": "brot_dinkel_roggen_speck_hefe",
+            "recipe_version": 3,
+            "recipe_snapshot": {
+                "name": "Dinkel-Roggen-Speckbrot (Schnelle Hefe-Variante)",
+                "hydration_percent": 74.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T20:39:56+01:00",
+            "ended_at": "2026-02-12T20:43:40+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 1100
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_dinkel_630",
+                    "planned_g": 300,
+                    "actual_g": 300,
+                    "stock_deducted_g": 300
+                },
+                {
+                    "mehl_id": "mehl_roggen_1150",
+                    "planned_g": 200,
+                    "actual_g": 200,
+                    "stock_deducted_g": 200
+                },
+                {
+                    "mehl_id": "wasser",
+                    "planned_g": 370,
+                    "actual_g": 370,
+                    "stock_deducted_g": 370
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 30,
+                    "actual_start_at": "2026-02-12T20:39:56+01:00",
+                    "actual_end_at": "2026-02-12T20:40:13+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Autolyse (Mehl+Wasser)"
+                },
+                {
+                    "key": "kneten",
+                    "planned_duration_min": 7,
+                    "actual_start_at": "2026-02-12T20:40:16+01:00",
+                    "actual_end_at": "2026-02-12T20:40:19+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Hefe & Salz einarbeiten"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 75,
+                    "actual_start_at": "2026-02-12T20:40:20+01:00",
+                    "actual_end_at": "2026-02-12T20:40:20+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Erste Gehzeit"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 40,
+                    "actual_start_at": "2026-02-12T20:40:21+01:00",
+                    "actual_end_at": "2026-02-12T20:40:23+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stückgare"
+                },
+                {
+                    "key": "testgare",
+                    "planned_duration_min": 3,
+                    "actual_start_at": "2026-02-12T20:40:26+01:00",
+                    "actual_end_at": "2026-02-12T20:43:26+01:00",
+                    "actual_duration_min": 3,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Testgare"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "hydration_percent_used": 74.0,
+                "flour_total_planned_g": 500.0,
+                "hydration_water_planned_g": 370.0,
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T20:43:46+01:00"
+            },
+            "created_at": "2026-02-12T20:43:46+01:00",
+            "updated_at": "2026-02-12T20:43:46+01:00"
+        },
+        {
+            "id": "bv_2026_02_12_017",
+            "recipe_id": "brot_dinkel_roggen_speck_hefe",
+            "recipe_version": 3,
+            "recipe_snapshot": {
+                "name": "Dinkel-Roggen-Speckbrot (Schnelle Hefe-Variante)",
+                "hydration_percent": 74.0
+            },
+            "status": "completed",
+            "planned_bake_date": "2026-02-12",
+            "started_at": "2026-02-12T21:59:22+01:00",
+            "ended_at": "2026-02-12T22:03:01+01:00",
+            "scale_factor": 1,
+            "target": {
+                "loaf_count": 1,
+                "target_dough_weight_g": 1100
+            },
+            "ingredient_usage": [
+                {
+                    "mehl_id": "mehl_dinkel_630",
+                    "planned_g": 300,
+                    "actual_g": 300,
+                    "stock_deducted_g": 300
+                },
+                {
+                    "mehl_id": "mehl_roggen_1150",
+                    "planned_g": 200,
+                    "actual_g": 200,
+                    "stock_deducted_g": 200
+                },
+                {
+                    "mehl_id": "wasser",
+                    "planned_g": 370,
+                    "actual_g": 370,
+                    "stock_deducted_g": 370
+                }
+            ],
+            "step_runs": [
+                {
+                    "key": "autolyse",
+                    "planned_duration_min": 30,
+                    "actual_start_at": "2026-02-12T21:59:22+01:00",
+                    "actual_end_at": "2026-02-12T21:59:32+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "teig klebt wie sau",
+                    "label": "Autolyse (Mehl+Wasser)"
+                },
+                {
+                    "key": "kneten",
+                    "planned_duration_min": 7,
+                    "actual_start_at": "2026-02-12T22:01:29+01:00",
+                    "actual_end_at": "2026-02-12T22:01:33+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Hefe & Salz einarbeiten"
+                },
+                {
+                    "key": "stockgare",
+                    "planned_duration_min": 75,
+                    "actual_start_at": "2026-02-12T22:02:24+01:00",
+                    "actual_end_at": "2026-02-12T22:02:48+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Erste Gehzeit"
+                },
+                {
+                    "key": "stueckgare",
+                    "planned_duration_min": 40,
+                    "actual_start_at": "2026-02-12T22:02:52+01:00",
+                    "actual_end_at": "2026-02-12T22:02:56+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Stückgare"
+                },
+                {
+                    "key": "testgare",
+                    "planned_duration_min": 3,
+                    "actual_start_at": "2026-02-12T22:02:58+01:00",
+                    "actual_end_at": "2026-02-12T22:03:00+01:00",
+                    "actual_duration_min": 1,
+                    "avg_temp_c": null,
+                    "note": "",
+                    "label": "Testgare"
+                }
+            ],
+            "measurements": [],
+            "outcome": {
+                "rating": null,
+                "crumb": "",
+                "crust": "",
+                "volume": "",
+                "taste_note": ""
+            },
+            "issues": [],
+            "notes": "",
+            "attachments": [],
+            "custom": {
+                "hydration_percent_used": 74.0,
+                "flour_total_planned_g": 500.0,
+                "hydration_water_planned_g": 370.0,
+                "stock_deducted": true,
+                "stock_deducted_at": "2026-02-12T22:03:08+01:00"
+            },
+            "created_at": "2026-02-12T22:01:45+01:00",
+            "updated_at": "2026-02-12T22:03:08+01:00"
         }
-      ],
-      "measurements": [],
-      "outcome": {
-        "rating": 5,
-        "crumb": "pflufig",
-        "crust": "knackig",
-        "volume": "gut",
-        "taste_note": "Extrem lecker, Emmer sehr fein gemahlen."
-      },
-      "issues": [],
-      "notes": "Im Römertopf gebacken [4].",
-      "attachments": [],
-      "custom": {
-        "oven_type": "Römertopf"
-      },
-      "created_at": "2021-10-14T11:00:00+02:00",
-      "updated_at": "2021-10-14T11:00:00+02:00"
-    },
-    {
-      "id": "bv_2024_06_04_001",
-      "recipe_id": "brot_marcels_ruchmehl",
-      "recipe_version": 1,
-      "recipe_snapshot": {
-        "name": "Marcels Sauerteigbrot (Christina)",
-        "hydration_percent": 85.0
-      },
-      "status": "completed",
-      "planned_bake_date": "2024-06-04",
-      "started_at": "2024-06-03T18:00:00+02:00",
-      "ended_at": "2024-06-04T09:30:00+02:00",
-      "scale_factor": 1.0,
-      "target": {
-        "loaf_count": 1,
-        "target_dough_weight_g": 1330
-      },
-      "ingredient_usage": [],
-      "step_runs": [],
-      "measurements": [],
-      "outcome": {
-        "rating": 2,
-        "crumb": "zu_grosse_loecher",
-        "crust": "k.A.",
-        "volume": "flach",
-        "taste_note": "Geschmacklich ok, aber Struktur fehlte."
-      },
-      "issues": [
-        "too_liquid_dough"
-      ],
-      "notes": "Zweiter Versuch missglückt: Teig extrem flüssig, konnte nicht rund gewirkt werden [5].",
-      "attachments": [],
-      "custom": {},
-      "created_at": "2024-06-04T12:00:00+02:00",
-      "updated_at": "2024-06-04T12:00:00+02:00"
-    },
-    {
-      "id": "bv_2025_01_13_001",
-      "recipe_id": "brot_multisaaten_sauerteig",
-      "recipe_version": 1,
-      "recipe_snapshot": {
-        "name": "Multisaaten Sauerteig Brot (Moni K.)",
-        "hydration_percent": 96.0
-      },
-      "status": "completed",
-      "planned_bake_date": "2025-01-13",
-      "started_at": "2025-01-13T07:00:00+01:00",
-      "ended_at": "2025-01-13T14:00:00+01:00",
-      "scale_factor": 1.0,
-      "target": {
-        "loaf_count": 2,
-        "target_dough_weight_g": 1100
-      },
-      "ingredient_usage": [],
-      "step_runs": [],
-      "measurements": [],
-      "outcome": {
-        "rating": 5,
-        "crumb": "fest_stabil",
-        "crust": "k.A.",
-        "volume": "gut",
-        "taste_note": "Neues Lieblingsbrot."
-      },
-      "issues": [],
-      "notes": "Teig war ein wenig fester als im Video gezeigt [6].",
-      "attachments": [],
-      "custom": {},
-      "created_at": "2025-01-13T15:00:00+01:00",
-      "updated_at": "2025-01-13T15:00:00+01:00"
-    }
-  ]
+    ]
 }

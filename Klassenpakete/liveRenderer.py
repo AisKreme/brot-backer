@@ -1,13 +1,21 @@
 from contextlib import contextmanager
 from typing import List, Optional
 
-from rich import box
 from rich.console import Console
 from rich.live import Live
 from rich.table import Table
 
 from Klassenpakete.mehl import Mehl
 from Klassenpakete.navigation import Navigation
+from Klassenpakete.ui_layout import (
+    HIGHLIGHT_STYLE,
+    MAX_ZEILEN_MENUE,
+    MAX_ZEILEN_STANDARD,
+    TERMINAL_ZIEL_BREITE,
+    baue_standard_tabelle,
+    kuerze_text,
+    sichtfenster_indizes,
+)
 
 
 class LiveRenderer:
@@ -17,7 +25,7 @@ class LiveRenderer:
     """
 
     def __init__(self):
-        self.console = Console()
+        self.console = Console(width=TERMINAL_ZIEL_BREITE)
         self._live: Live = Live(
             console=self.console,
             refresh_per_second=20,
@@ -36,21 +44,16 @@ class LiveRenderer:
         High-End CI Tabelle für Mehle.
         """
 
-        tabelle = Table(
-            title="[bold bright_white]🍞  Brot-Backer | Mehlbestand[/bold bright_white]",
-            expand=True,
-            box=box.ROUNDED,
-            header_style="bold white on dark_green",
-            # row_styles=["none", "grey19"],
-            border_style="grey35",
-            caption="[dim]↑ ↓ Navigieren  |  ENTER Auswahl  |  SPACE Bestand  |  BACK Zurück[/dim]",
+        tabelle = baue_standard_tabelle(
+            titel="Brot-Backer | Mehlbestand",
+            caption="↑ ↓ Navigieren | ENTER Auswahl | SPACE Bestand | BACK Zurueck",
         )
 
-        tabelle.add_column("Nr.", style="bold cyan", justify="right")
-        tabelle.add_column("Art", style="magenta")
-        tabelle.add_column("Typ", style="green")
-        tabelle.add_column("Eigenname", style="white")
-        tabelle.add_column("Bestand (g)", justify="right", style="bold yellow")
+        tabelle.add_column("Nr.", style="bold cyan", justify="right", width=4)
+        tabelle.add_column("Art", style="magenta", max_width=12, overflow="ellipsis")
+        tabelle.add_column("Typ", style="green", max_width=12, overflow="ellipsis")
+        tabelle.add_column("Eigenname", style="white", max_width=24, overflow="ellipsis")
+        tabelle.add_column("Bestand", justify="right", style="bold yellow", width=8)
 
         if nur_vorhandene:
             mehle = [m for m in mehle if m.vorhandenGramm > 0]
@@ -58,7 +61,18 @@ class LiveRenderer:
         if not mehle:
             return tabelle
 
-        for index, mehl in enumerate(mehle):
+        aktive_zeile = 0 if highlight_index is None else highlight_index
+        sichtbare_indizes, hat_oben, hat_unten = sichtfenster_indizes(
+            anzahl_zeilen=len(mehle),
+            aktiver_index=aktive_zeile,
+            max_zeilen=MAX_ZEILEN_STANDARD,
+        )
+
+        if hat_oben:
+            tabelle.add_row("...", "...", "...", "...", "...", style="dim")
+
+        for index in sichtbare_indizes:
+            mehl = mehle[index]
             bestand = mehl.vorhandenGramm
 
             # Dynamische Bestandsfarbe
@@ -71,18 +85,21 @@ class LiveRenderer:
 
             # Highlight überschreibt alles
             if highlight_index is not None and index == highlight_index:
-                zeilen_style = "bold black on bright_yellow"
+                zeilen_style = HIGHLIGHT_STYLE
             else:
                 zeilen_style = ""
 
             tabelle.add_row(
                 str(index + 1),
-                mehl.mehlArt,
-                mehl.mehlTyp,
-                mehl.eigenName or "-",
+                kuerze_text(mehl.mehlArt, 12),
+                kuerze_text(mehl.mehlTyp, 12),
+                kuerze_text(mehl.eigenName, 24),
                 bestand_text,
                 style=zeilen_style,
             )
+
+        if hat_unten:
+            tabelle.add_row("...", "...", "...", "...", "...", style="dim")
 
         return tabelle
 
@@ -96,19 +113,36 @@ class LiveRenderer:
         High-End CI Tabelle für Haupt- und Untermenüs.
         """
 
-        tabelle = Table(
-            title=f"[bold bright_white]{titel}[/bold bright_white]",
-            expand=True,
-            box=box.ROUNDED,
-            header_style="bold white on dark_green",
-            border_style="grey35",
-            caption="[dim]↑ ↓ Navigieren  |  ENTER Auswahl  |  BACK Zurück[/dim]",
+        tabelle = baue_standard_tabelle(
+            titel=titel,
+            caption="↑ ↓ Navigieren | ENTER Auswahl | BACK Zurueck",
         )
 
         tabelle.add_column("Nr.", style="bold cyan", justify="right", width=4)
-        tabelle.add_column("Option", style="bold white")
+        tabelle.add_column(
+            "Option",
+            style="bold white",
+            overflow="ellipsis",
+            no_wrap=True,
+            max_width=66,
+        )
 
-        for index, item in enumerate(items):
+        if not items:
+            tabelle.add_row("-", "Keine Optionen")
+            return tabelle
+
+        aktive_zeile = 0 if highlight_index is None else highlight_index
+        sichtbare_indizes, hat_oben, hat_unten = sichtfenster_indizes(
+            anzahl_zeilen=len(items),
+            aktiver_index=aktive_zeile,
+            max_zeilen=MAX_ZEILEN_MENUE,
+        )
+
+        if hat_oben:
+            tabelle.add_row("...", "...", style="dim")
+
+        for index in sichtbare_indizes:
+            item = items[index]
             # Alternierende Index-Farbe
             if index % 2 == 0:
                 index_style = "cyan"
@@ -119,15 +153,18 @@ class LiveRenderer:
 
             # Highlight für aktive Auswahl
             if highlight_index is not None and index == highlight_index:
-                row_style = "bold black on bright_yellow"
+                row_style = HIGHLIGHT_STYLE
             else:
                 row_style = ""
 
             tabelle.add_row(
                 nummer_text,
-                item,
+                kuerze_text(item, 66),
                 style=row_style,
             )
+
+        if hat_unten:
+            tabelle.add_row("...", "...", style="dim")
 
         return tabelle
 
@@ -178,3 +215,10 @@ class LiveRenderer:
             if result is not None:
                 return result
             # sonst weiterlaufen (z.B. Pfeiltasten) ohne None zurückzugeben
+
+    def update(self, renderbares_objekt) -> None:
+        """
+        Rendert einmalig ein Rich-Objekt im aktuellen Live-Bereich.
+        """
+        self.resume()
+        self._live.update(renderbares_objekt, refresh=True)

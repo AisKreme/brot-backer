@@ -1,6 +1,6 @@
 {
     "schema_version": 1,
-    "updated_at": "2026-02-12T17:50:42+01:00",
+    "updated_at": "2026-02-12T22:54:41+01:00",
     "items": [
         {
             "id": "mehl_weizen_405",
@@ -8,8 +8,8 @@
             "mehlTyp": "405",
             "eigenName": "Weissmehl / Auszugsmehl",
             "empfohleneHydration": "60-65%",
-            "vorhanden": true,
-            "vorhandenGramm": 150
+            "vorhanden": false,
+            "vorhandenGramm": 0
         },
         {
             "id": "mehl_weizen_550",
@@ -44,8 +44,8 @@
             "mehlTyp": "1600",
             "eigenName": "Dikel",
             "empfohleneHydration": "75-90%",
-            "vorhanden": false,
-            "vorhandenGramm": 0
+            "vorhanden": true,
+            "vorhandenGramm": 500
         },
         {
             "id": "mehl_dinkel_1050_weiss",
@@ -71,7 +71,7 @@
             "mehlTyp": "Vollkorn",
             "eigenName": "Vollkornmehl",
             "empfohleneHydration": "65-75%",
-            "vorhanden": true,
+            "vorhanden": false,
             "vorhandenGramm": 0
         },
         {
@@ -89,8 +89,8 @@
             "mehlTyp": "1150",
             "eigenName": "dunkel",
             "empfohleneHydration": "78-92%",
-            "vorhanden": true,
-            "vorhandenGramm": 150
+            "vorhanden": false,
+            "vorhandenGramm": 0
         },
         {
             "id": "mehl_roggen_vollkorn",
@@ -107,8 +107,8 @@
             "mehlTyp": "Emmer",
             "eigenName": "Vollkornmehl",
             "empfohleneHydration": "55-65%",
-            "vorhanden": true,
-            "vorhandenGramm": 500
+            "vorhanden": false,
+            "vorhandenGramm": 0
         },
         {
             "id": "mehl_einkorn_vollkorn",
